@@ -458,9 +458,6 @@ If you configure SSH on remote server, click the file icon and select the sshd_c
 <center><img src="HC/SSHConfig_PC_Mode_1.png" width="50%" /></center>  
 <br>
 
-![image](HC/SSHConfig_PC_Mode_1.png){width="50%" height="50%"}  
-<br>
-
 * Server Mode  
   When "Server Mode" is enabled, locally installed SSH can be configured.  
   When "Server Mode" is disabled, you can configure SSH installed on remote server.  
