@@ -1,0 +1,12 @@
+#ifndef REMOTEWINDOWEXPORT_H
+#define REMOTEWINDOWEXPORT_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(REMOTEWINDOW_LIBRARY)
+#  define REMOTEWINDOW_EXPORT Q_DECL_EXPORT
+#else
+#  define REMOTEWINDOW_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // REMOTEWINDOWEXPORT_H

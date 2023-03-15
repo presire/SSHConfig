@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Main.qml</file>
+        <file>Auth.qml</file>
+        <file>Select.qml</file>
+        <file>Reload.qml</file>
+        <file>AuthForSSHService.qml</file>
+        <file>ExtendQML/CompletePopup.qml</file>
+        <file>ExtendQML/ErrorDialog.qml</file>
+        <file>ExtendQML/PasswordDialog.qml</file>
+        <file>ExtendQML/SelectFileDialog.qml</file>
+        <file>ExtendQML/WaitPopup.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>i18n/RemoteWindow_ja_JP.qm</file>
+        <file>SelectDirectory.qml</file>
+        <file>PP/AuthForSSHServicePP.qml</file>
+        <file>PP/AuthPP.qml</file>
+        <file>PP/MainPP.qml</file>
+        <file>PP/ReloadPP.qml</file>
+        <file>PP/SelectDirectoryPP.qml</file>
+        <file>PP/SelectPP.qml</file>
+        <file>ExtendQML/ErrorDialogPP.qml</file>
+    </qresource>
+</RCC>

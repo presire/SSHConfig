@@ -1,0 +1,18 @@
+[Unit]
+Description=Server utilities for SSH Config using TCP and SSL
+Before=network-online.target
+After=NetworkManager.service systemd-resolved.service
+
+[Service]
+Type=simple
+User=%user%
+Group=%group%
+ExecStart=%install_dir%/bin/SSHConfigServer --sysconfdir=%sysconf_dir%/sshconfig.json
+ExecReload=/bin/kill -HUP  $MAINPID
+ExecStop=/bin/kill   -TERM $MAINPID
+PIDFile=%pid_dir%/SSHConfigServer.pid
+Restart=no
+#StandardInput=tty-force
+
+[Install]
+WantedBy=multi-user.target

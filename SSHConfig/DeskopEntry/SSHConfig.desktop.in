@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=SSHConfig %ver%
+GenericName=SSHConfig
+Comment=Configure SSH settings through the Graphical User Interface.
+Exec=%install_dir%/bin/SSHConfig.sh %F
+Icon=%install_dir%/share/icons/hicolor/128x128/apps/SSHConfig.png
+Categories=Utility;Network;
+Keywords=ssh;network;sshconfig;
+Terminal=false

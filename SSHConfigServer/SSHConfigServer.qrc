@@ -1,0 +1,5 @@
+ <RCC>
+    <qresource prefix="/">
+         <file>i18n/SSHConfigServer_ja_JP.qm</file>
+    </qresource>
+</RCC>

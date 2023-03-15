@@ -1,0 +1,26 @@
+{
+    "PORT": {
+        "value": 61060
+    },
+    "USESSL": {
+        "value": false
+    },
+    "USECERT": {
+        "value": false
+    },
+    "CERTFILE": {
+        "value": ""
+    },
+    "USEKEY": {
+        "value": false
+    },
+    "KEYFILE": {
+        "value": ""
+    },
+    "USEPASSPHRASE": {
+        "value": false
+    },
+    "PASSPHRASE": {
+        "value": ""
+    }
+}
