@@ -1,4 +1,4 @@
-# SSHConfig for PinePhone and Linux PC(x64_64)
+# SSHConfig for PinePhone and Linux PC(x86_64)
 
 # Preface  
 SSHConfig is software that allows you to configure SSH configuration files on GUI.  
@@ -22,7 +22,8 @@ If you want to know which version of openSSH you are using, execute following co
 <br>
 
 # 1. Install the necessary dependencies for SSHConfig
-Create a directory for installing Qt 5.15 libraries on PinePhone.  
+Common to Linux PC, PinePhone.  
+<br>
 
 * Qt5 Core
 * Qt5 Gui
@@ -33,7 +34,8 @@ Create a directory for installing Qt 5.15 libraries on PinePhone.
 * Qt5 QuickControls2
 * Qt5 Qml
 * Qt5 QmlModels
-* Qt5 Network
+* Qt5 Network  (Use libRemoteWindow.so, SSHConfigServer)
+* Qt5 Linguist (Translation)
   * <https://www.qt.io/>  
   * This software uses Qt, and Qt used is under LGPL license.  
   * You will find its license file in following directory.  
@@ -61,8 +63,14 @@ Create a directory for installing Qt 5.15 libraries on PinePhone.
     <del><I>**ThirdPartyLicenses/libbsd_readpassphrase.txt**</I></del>  
 <br>
 
-Get the latest updates on PinePhone.  
+Get the latest updates.  
 
+    sudo zypper update
+
+    sudo dnf update
+    
+    sudo apt update && sudo apt upgrade
+    
     sudo pacman -Syu  
 <br>
 
