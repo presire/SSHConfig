@@ -235,7 +235,7 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/etc/sshconfig.json.in
                ${CMAKE_CURRENT_BINARY_DIR}/sshconfig.json
 )
 
-if(SYSCONFDIR STREQUAL "")
+if("${SYSCONFDIR}" STREQUAL "")
     set(SYSCONFDIR "/etc/sshconfig")
     install(FILES
         ${CMAKE_CURRENT_BINARY_DIR}/sshconfig.json
@@ -272,7 +272,7 @@ string(REPLACE "%sysconf_dir%" "${SYSCONFDIR}" output_file_content "${output_fil
 # Write File
 file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/sshconfigd.service" "${output_file_content}")
 
-if(SYSTEMD STREQUAL "")
+if("${SYSTEMD}" STREQUAL "")
     install(FILES
         ${CMAKE_CURRENT_BINARY_DIR}/sshconfigd.service
         DESTINATION "/etc/systemd/system"

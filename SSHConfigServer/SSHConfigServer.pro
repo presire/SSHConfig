@@ -117,7 +117,7 @@ DISTFILES += \
     i18n/SSHConfigServer_ja_JP.qm
 
 # Version Information
-VERSION = 0.1.0
+VERSION = 0.1.1
 VERSTR = '\\"$${VERSION}\\"'  # place quotes around the version string
 DEFINES += VER=\"$${VERSTR}\" # create a VER macro containing the version string
 

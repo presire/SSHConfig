@@ -7,6 +7,8 @@
 #include <QHostAddress>
 #include <QDataStream>
 #include <QtDBus>
+#include <sys/stat.h>
+#include <unistd.h>
 
 
 struct UnitProcess

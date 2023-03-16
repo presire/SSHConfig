@@ -71,10 +71,10 @@ Install the dependencies required to build the **SSHConfig** and **SSHConfig Ser
     # SUSE Linux Enterprise / openSUSE
     sudo zypper install \
                 coreutils gcc cmake polkit-devel libpolkit-qt5-1-devel \
-                libqt5-qtbase-common-devel libqt5-linguist libqt5-qtdeclarative-tools \
+                libqt5-qtbase-common-devel libqt5-linguist libqt5-linguist-devel \
                 libQt5Core-devel libQt5Gui-devel libQt5Widgets-devel libQt5DBus-devel \
                 libQt5QuickControls2-devel libQt5Network-devel libQt5Xml-devel 
-                libQt5Concurrent-devel
+                libQt5Concurrent-devel libqt5-qtdeclarative-tools
 
     # Fedora
     sudo dnf install \

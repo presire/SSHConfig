@@ -427,6 +427,10 @@ int CSSLSocket::Command(const QByteArray &data)
         try
         {
             // Get permission of source sshd_config file.
+            QFileInfo UploadFileInfo(strUploadFile);
+            auto      strOwnerID = UploadFileInfo.ownerId();
+            auto      strGroupID = UploadFileInfo.groupId();
+
             auto SrcPermission = QFile::permissions(strUploadFile);
 
             // Backup sshd_config file.
@@ -463,7 +467,8 @@ int CSSLSocket::Command(const QByteArray &data)
 
             SSHFile.close();
 
-            // Finally, set permission sshd_config file.
+            // Finally, set owner, group, permission sshd_config file.
+            chown(strUploadFile.toUtf8().constData(), strOwnerID, strGroupID);
             SSHFile.setPermissions(strUploadFile, SrcPermission);
 
             // Send success message to client.

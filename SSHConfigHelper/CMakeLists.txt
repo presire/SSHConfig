@@ -120,7 +120,7 @@ endif(WITH_POLQT_DIR)
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/SSHConfigHelper_ja_JP.ts")
     # If exist ts file.
     set(TS_FILES
-        "${CMAKE_SOURCE_DIR}/SSHConfigHelper_ja_JP.ts"
+        "${CMAKE_CURRENT_SOURCE_DIR}/SSHConfigHelper_ja_JP.ts"
     )
 
     set_source_files_properties(${TS_FILES} PROPERTIES
