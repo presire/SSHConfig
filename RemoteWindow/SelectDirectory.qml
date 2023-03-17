@@ -94,7 +94,7 @@ Item {
         function onServerConnected() {
             completePopup.viewTitle = qsTr("Connection succeeded")
             completePopup.fontPadding = selectDirectory.fontPadding
-            completePopup.bAutolose = false
+            completePopup.bAutoClose = false
             completePopup.open()
         }
     }

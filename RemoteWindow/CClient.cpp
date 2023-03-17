@@ -196,8 +196,8 @@ bool CClient::connectToServer(QString strHostName,   QString strPort,        boo
         {
             this->abort();
 
-            m_strErrorMessage = tr("TCP session failed to establish.") + QString("\n") +
-                                this->errorString() + QString("\n");
+            m_strErrorMessage = tr("TCP session failed to establish.") + QString("<br>") +
+                                this->errorString() + QString("<br>");
 
             return false;
         }
@@ -455,6 +455,7 @@ void CClient::ReciveData(QByteArray data)
         if(aryData.at(0).compare("error", Qt::CaseSensitive) == 0)
         {   // Error.
             emit readSSH(-1);
+            return;
         }
 
         auto ok = false;
@@ -474,6 +475,7 @@ void CClient::ReciveData(QByteArray data)
         if(aryData.at(0).compare("error", Qt::CaseSensitive) == 0)
         {   // Error.
             emit readSSHStatus(-1);
+            return;
         }
 
         int iStatus = 0;
@@ -496,6 +498,7 @@ void CClient::ReciveData(QByteArray data)
         if(aryData.at(0).compare("error", Qt::CaseSensitive) == 0)
         {   // Error.
             emit readSSHStatus(-1);
+            return;
         }
 
         int iStatus = 0;
@@ -518,6 +521,7 @@ void CClient::ReciveData(QByteArray data)
         if(aryData.at(0).compare("error", Qt::CaseSensitive) == 0)
         {   // Error.
             emit readSSHStatus(-1);
+            return;
         }
 
         int iStatus = 0;

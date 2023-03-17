@@ -122,14 +122,14 @@ RESOURCES += \
     Image/FileButtonPressed.png \
     Image/FileNetworkButton.png \
     Image/FileNetworkButtonPressed.png \
+    Image/HomeButton.png \
+    Image/HomeButtonPressed.png \
     Image/Key.png \
     Image/KeyFileButton.png \
     Image/KeyFileButtonPressed.png \
     Image/Lock.png \
     Image/OpenDirectory.png \
     Image/OpenDirectoryPressed.png \
-    Image/HomeButton.png \
-    Image/HomeButtonPressed.png \
     Image/RemoteWindow.png \
     Image/SSHConfig.png \
     Image/Qt.png \
@@ -192,7 +192,7 @@ else {
 }
 
 # Version Information
-VERSION = 0.1.0
+VERSION = 0.1.1
 VERSTR = '\\"$${VERSION}\\"'  # place quotes around the version string
 DEFINES += VER=\"$${VERSTR}\" # create a VER macro containing the version string
 

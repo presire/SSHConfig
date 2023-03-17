@@ -103,7 +103,7 @@ Item {
         function onServerConnected() {
             completePopup.viewTitle = qsTr("Connection succeeded")
             completePopup.fontPadding = select.fontPadding
-            completePopup.bAutolose = false
+            completePopup.bAutoClose = false
             completePopup.open()
         }
     }
@@ -179,7 +179,7 @@ Item {
                         // Success download.
 //                        completePopup.viewTitle = qsTr("\"sshd_config\" file has been selected")
 //                        completePopup.fontPadding = select.fontPadding
-//                        completePopup.bAutolose = true
+//                        completePopup.bAutoClose = true
 //                        completePopup.open()
                     }
                     else if (iRet === 1) {
@@ -235,7 +235,7 @@ Item {
                 // Success download.
 //                completePopup.viewTitle = qsTr("\"sshd_config\" file has been selected")
 //                completePopup.fontPadding = select.fontPadding
-//                completePopup.bAutolose = true
+//                completePopup.bAutoClose = true
 //                completePopup.open()
             }
             else if (iRet === 1) {
@@ -323,7 +323,7 @@ Item {
 
 //            completePopup.viewTitle = qsTr("Key file has been selected")
 //            completePopup.fontPadding = select.fontPadding
-//            completePopup.bAutolose = true
+//            completePopup.bAutoClose = true
 //            completePopup.open()
         }
         else {

@@ -31,6 +31,10 @@ Page {
     Component.onCompleted: {
         if (pageSSHServer.bServerMode) {
             // Server Mode.
+
+            // Get path to previously loaded sshd_config file.
+            textSSHFilePath.text = sshServerConfig.getSSHFilePath()
+
             // Enable "Reload" button, but disable "Write" buttons.
             btnReload.enabled = true
             btnWrite.enabled  = false
@@ -68,6 +72,15 @@ Page {
             btnReload.text = qsTr("Read/Reload")
             btnWrite.text  = qsTr("Write")
         }
+    }
+
+    onBServerModeChanged: {
+        bReadSuccess   = false
+        localFileName  = ""
+        remoteFileName = ""
+        textSSHFilePath.readFilePath = ""
+
+        Component.completed()
     }
 
     Connections {
@@ -949,7 +962,7 @@ Page {
                     TextField {
                         id: textSSHFilePath
                         y: (parent.height - height) / 2
-                        text: sshServerConfig.getSSHFilePath()
+                        text: ""
                         width: (pageSSHServer.width - btnFileSelect.width - parent.spacing * 3 - btnFileSelect.width - btnWrite.width - btnReload.width) > 300 ?
                                 pageSSHServer.width - btnFileSelect.width - parent.spacing * 3 - btnFileSelect.width - btnWrite.width - btnReload.width : 300
                         implicitWidth: (pageSSHServer.width - btnFileSelect.width - parent.spacing * 3 - btnFileSelect.width - btnWrite.width - btnReload.width) > 300 ?
@@ -1054,7 +1067,16 @@ Page {
                                 // Server Mode.
                                 if (textSSHFilePath.readFilePath !== "") {
                                     textSSHFilePath.text = textSSHFilePath.readFilePath
-                                    pageSSHServer.fnReadSSHFile(textSSHFilePath.readFilePath)
+
+                                    // Open reload dialog.
+                                    let componentDialog = Qt.createComponent("qrc:/ExtendQML/ReloadDialog.qml");
+                                    if (componentDialog.status === Component.Ready) {
+                                        let reloadDialog = componentDialog.createObject(pageSSHServer,
+                                                                                        {mainWidth: pageSSHServer.width, mainHeight: pageSSHServer.height, bDark: pageSSHServer.bDark,
+                                                                                         bPP: true})
+                                        reloadDialogConnection.target = reloadDialog
+                                        reloadDialog.show();
+                                    }
                                 }
                                 else {
                                     selectSSHServerFileDialog.open()
@@ -1062,11 +1084,24 @@ Page {
                             }
                             else {
                                 // Client Mode.
-                                if (pageSSHServer.bReadSuccess) {
+                                if (pageSSHServer.bReadSuccess && pageSSHServer.remoteFileName !== "") {
                                     sshServerConfig.reloadSSHConfigFile(pageSSHServer.bDark, pageSSHServer.fontPadding, pageSSHServer.remoteFileName)
                                 }
                                 else {
                                     sshServerConfig.downloadSSHConfigFile(parentName.width, parentName.height, pageSSHServer.bDark, pageSSHServer.fontPadding)
+                                }
+                            }
+                        }
+
+                        Connections {
+                            id: reloadDialogConnection
+                            function onVisibleChanged() {
+                                if(!target.visible) {
+                                    if (target.returnValue === 1) {
+                                        // [OK] button on Reload Dialog.
+                                        pageSSHServer.fnReadSSHFile(textSSHFilePath.readFilePath)
+                                    }
+                                    target = null
                                 }
                             }
                         }

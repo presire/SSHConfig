@@ -97,110 +97,97 @@
         <translation>ssh(d).serviceの認証 (リモートサーバ)</translation>
     </message>
     <message>
-        <location filename="AuthForSSHService.qml" line="115"/>
-        <location filename="AuthForSSHService.qml" line="138"/>
-        <location filename="AuthForSSHService.qml" line="158"/>
+        <location filename="AuthForSSHService.qml" line="657"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="AuthForSSHService.qml" line="116"/>
-        <source>Connection failed.</source>
-        <translation>接続に失敗しました。</translation>
-    </message>
-    <message>
-        <location filename="AuthForSSHService.qml" line="139"/>
-        <location filename="AuthForSSHService.qml" line="159"/>
-        <source>Failed to send packet.</source>
-        <translation>パケットの送信に失敗しました。</translation>
-    </message>
-    <message>
-        <location filename="AuthForSSHService.qml" line="199"/>
+        <location filename="AuthForSSHService.qml" line="105"/>
         <source>Host Name :</source>
         <translation>ホスト名 :</translation>
     </message>
     <message>
-        <location filename="AuthForSSHService.qml" line="215"/>
+        <location filename="AuthForSSHService.qml" line="121"/>
         <source>Remote Server Name</source>
         <translation>リモートサーバ名</translation>
     </message>
     <message>
-        <location filename="AuthForSSHService.qml" line="245"/>
+        <location filename="AuthForSSHService.qml" line="151"/>
         <source>Port :</source>
         <translation>ポート番号 :</translation>
     </message>
     <message>
-        <location filename="AuthForSSHService.qml" line="261"/>
+        <location filename="AuthForSSHService.qml" line="167"/>
         <source>Port Number</source>
         <translation>ポート番号</translation>
     </message>
     <message>
-        <location filename="AuthForSSHService.qml" line="290"/>
+        <location filename="AuthForSSHService.qml" line="196"/>
         <source>Use SSL</source>
         <translation>SSLを使用する</translation>
     </message>
     <message>
-        <location filename="AuthForSSHService.qml" line="328"/>
+        <location filename="AuthForSSHService.qml" line="234"/>
         <source>Use Certificate</source>
         <translation>サーバ証明書を使用する</translation>
     </message>
     <message>
-        <location filename="AuthForSSHService.qml" line="376"/>
+        <location filename="AuthForSSHService.qml" line="282"/>
         <source>Certificate File :</source>
         <translation>サーバ証明書 :</translation>
     </message>
     <message>
-        <location filename="AuthForSSHService.qml" line="392"/>
+        <location filename="AuthForSSHService.qml" line="298"/>
         <source>Select Certificate file</source>
         <translation>サーバ証明書ファイルを選択</translation>
     </message>
     <message>
-        <location filename="AuthForSSHService.qml" line="445"/>
+        <location filename="AuthForSSHService.qml" line="351"/>
         <source>Use Private Key</source>
         <translation>秘密鍵を使用する</translation>
     </message>
     <message>
-        <location filename="AuthForSSHService.qml" line="493"/>
+        <location filename="AuthForSSHService.qml" line="399"/>
         <source>Private Key File :</source>
         <translation>秘密鍵 :</translation>
     </message>
     <message>
-        <location filename="AuthForSSHService.qml" line="509"/>
+        <location filename="AuthForSSHService.qml" line="415"/>
         <source>Select Private Key file</source>
         <translation>秘密鍵を選択</translation>
     </message>
     <message>
-        <location filename="AuthForSSHService.qml" line="561"/>
+        <location filename="AuthForSSHService.qml" line="467"/>
         <source>Use Passphrase</source>
         <translation>パスフレーズを使用する</translation>
     </message>
     <message>
-        <location filename="AuthForSSHService.qml" line="609"/>
+        <location filename="AuthForSSHService.qml" line="515"/>
         <source>Passphrase :</source>
         <translation>パスフレーズ :</translation>
     </message>
     <message>
-        <location filename="AuthForSSHService.qml" line="625"/>
+        <location filename="AuthForSSHService.qml" line="531"/>
         <source>Passphrase</source>
         <translation>パスフレーズ</translation>
     </message>
     <message>
-        <location filename="AuthForSSHService.qml" line="642"/>
+        <location filename="AuthForSSHService.qml" line="548"/>
         <source>Save this setting</source>
         <translation>設定を保存</translation>
     </message>
     <message>
-        <location filename="AuthForSSHService.qml" line="685"/>
+        <location filename="AuthForSSHService.qml" line="591"/>
         <source>Next</source>
         <translation>次へ</translation>
     </message>
     <message>
-        <location filename="AuthForSSHService.qml" line="712"/>
+        <location filename="AuthForSSHService.qml" line="637"/>
         <source>Please wait for a while until process is finished.</source>
         <translation>処理が終了するまでしばらくお待ちください。</translation>
     </message>
     <message>
-        <location filename="AuthForSSHService.qml" line="726"/>
+        <location filename="AuthForSSHService.qml" line="671"/>
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>
@@ -208,115 +195,102 @@
 <context>
     <name>AuthForSSHServicePP</name>
     <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="19"/>
+        <location filename="PP/AuthForSSHServicePP.qml" line="17"/>
         <source>Authentication for &quot;ssh(d).service&quot; (Remote Server)</source>
         <translation>ssh(d).serviceの認証 (リモートサーバ)</translation>
     </message>
     <message>
         <location filename="PP/AuthForSSHServicePP.qml" line="655"/>
-        <location filename="PP/AuthForSSHServicePP.qml" line="678"/>
-        <location filename="PP/AuthForSSHServicePP.qml" line="698"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="656"/>
-        <source>Connection failed.</source>
-        <translation>接続に失敗しました。</translation>
-    </message>
-    <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="679"/>
-        <location filename="PP/AuthForSSHServicePP.qml" line="699"/>
-        <source>Failed to send packet.</source>
-        <translation>パケットの送信に失敗しました。</translation>
-    </message>
-    <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="118"/>
+        <location filename="PP/AuthForSSHServicePP.qml" line="103"/>
         <source>Host Name :</source>
         <translation>ホスト名 :</translation>
     </message>
     <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="134"/>
+        <location filename="PP/AuthForSSHServicePP.qml" line="119"/>
         <source>Remote Server Name</source>
         <translation>リモートサーバ名</translation>
     </message>
     <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="164"/>
+        <location filename="PP/AuthForSSHServicePP.qml" line="149"/>
         <source>Port :</source>
         <translation>ポート番号 :</translation>
     </message>
     <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="180"/>
+        <location filename="PP/AuthForSSHServicePP.qml" line="165"/>
         <source>Port Number</source>
         <translation>ポート番号</translation>
     </message>
     <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="209"/>
+        <location filename="PP/AuthForSSHServicePP.qml" line="194"/>
         <source>Use SSL</source>
         <translation>SSLを使用する</translation>
     </message>
     <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="247"/>
+        <location filename="PP/AuthForSSHServicePP.qml" line="232"/>
         <source>Use Certificate</source>
         <translation>サーバ証明書を使用する</translation>
     </message>
     <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="295"/>
+        <location filename="PP/AuthForSSHServicePP.qml" line="280"/>
         <source>Certificate File :</source>
         <translation>サーバ証明書 :</translation>
     </message>
     <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="311"/>
+        <location filename="PP/AuthForSSHServicePP.qml" line="296"/>
         <source>Select Certificate file</source>
         <translation>サーバ証明書ファイルを選択</translation>
     </message>
     <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="364"/>
+        <location filename="PP/AuthForSSHServicePP.qml" line="349"/>
         <source>Use Private Key</source>
         <translation>秘密鍵を使用する</translation>
     </message>
     <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="412"/>
+        <location filename="PP/AuthForSSHServicePP.qml" line="397"/>
         <source>Private Key File :</source>
         <translation>秘密鍵 :</translation>
     </message>
     <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="428"/>
+        <location filename="PP/AuthForSSHServicePP.qml" line="413"/>
         <source>Select Private Key file</source>
         <translation>秘密鍵を選択</translation>
     </message>
     <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="480"/>
+        <location filename="PP/AuthForSSHServicePP.qml" line="465"/>
         <source>Use Passphrase</source>
         <translation>パスフレーズを使用する</translation>
     </message>
     <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="528"/>
+        <location filename="PP/AuthForSSHServicePP.qml" line="513"/>
         <source>Passphrase :</source>
         <translation>パスフレーズ :</translation>
     </message>
     <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="544"/>
+        <location filename="PP/AuthForSSHServicePP.qml" line="529"/>
         <source>Passphrase</source>
         <translation>パスフレーズ</translation>
     </message>
     <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="561"/>
+        <location filename="PP/AuthForSSHServicePP.qml" line="546"/>
         <source>Save this setting</source>
         <translation>設定を保存</translation>
     </message>
     <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="604"/>
+        <location filename="PP/AuthForSSHServicePP.qml" line="589"/>
         <source>Next</source>
         <translation>次へ</translation>
     </message>
     <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="631"/>
+        <location filename="PP/AuthForSSHServicePP.qml" line="634"/>
         <source>Please wait for a while until process is finished.</source>
         <translation>処理が終了するまでしばらくお待ちください。</translation>
     </message>
     <message>
-        <location filename="PP/AuthForSSHServicePP.qml" line="718"/>
+        <location filename="PP/AuthForSSHServicePP.qml" line="669"/>
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>
@@ -472,7 +446,7 @@
 <context>
     <name>ErrorDialog</name>
     <message>
-        <location filename="ExtendQML/ErrorDialog.qml" line="66"/>
+        <location filename="ExtendQML/ErrorDialog.qml" line="67"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
@@ -549,6 +523,20 @@
     </message>
 </context>
 <context>
+    <name>ProcessPopup</name>
+    <message>
+        <location filename="ExtendQML/ProcessPopup.qml" line="113"/>
+        <source>Connection failed.</source>
+        <translation>接続に失敗しました。</translation>
+    </message>
+    <message>
+        <location filename="ExtendQML/ProcessPopup.qml" line="128"/>
+        <location filename="ExtendQML/ProcessPopup.qml" line="140"/>
+        <source>Failed to send packet.</source>
+        <translation>パケットの送信に失敗しました。</translation>
+    </message>
+</context>
+<context>
     <name>Reload</name>
     <message>
         <location filename="Reload.qml" line="84"/>
@@ -581,29 +569,29 @@
 <context>
     <name>ReloadPP</name>
     <message>
-        <location filename="PP/ReloadPP.qml" line="84"/>
-        <location filename="PP/ReloadPP.qml" line="102"/>
+        <location filename="PP/ReloadPP.qml" line="85"/>
+        <location filename="PP/ReloadPP.qml" line="104"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="PP/ReloadPP.qml" line="85"/>
-        <location filename="PP/ReloadPP.qml" line="103"/>
+        <location filename="PP/ReloadPP.qml" line="86"/>
+        <location filename="PP/ReloadPP.qml" line="105"/>
         <source>Connection failed.</source>
         <translation>接続に失敗しました。</translation>
     </message>
     <message>
-        <location filename="PP/ReloadPP.qml" line="134"/>
+        <location filename="PP/ReloadPP.qml" line="136"/>
         <source>Do you want to re-download the sshd_config file?</source>
         <translation>sshd_configファイルを再ダウンロードしますか？</translation>
     </message>
     <message>
-        <location filename="PP/ReloadPP.qml" line="156"/>
+        <location filename="PP/ReloadPP.qml" line="158"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="PP/ReloadPP.qml" line="193"/>
+        <location filename="PP/ReloadPP.qml" line="195"/>
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>
@@ -666,17 +654,17 @@
         <translation>リモートサーバ上のディレクトリの移動に失敗しました。</translation>
     </message>
     <message>
-        <location filename="Select.qml" line="700"/>
+        <location filename="Select.qml" line="701"/>
         <source>Select</source>
         <translation>選択</translation>
     </message>
     <message>
-        <location filename="Select.qml" line="733"/>
+        <location filename="Select.qml" line="734"/>
         <source>Back</source>
         <translation>戻る</translation>
     </message>
     <message>
-        <location filename="Select.qml" line="770"/>
+        <location filename="Select.qml" line="771"/>
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>
@@ -689,7 +677,7 @@
         <location filename="SelectDirectory.qml" line="125"/>
         <location filename="SelectDirectory.qml" line="163"/>
         <location filename="SelectDirectory.qml" line="444"/>
-        <location filename="SelectDirectory.qml" line="516"/>
+        <location filename="SelectDirectory.qml" line="517"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
@@ -716,22 +704,22 @@
         <translation>リモートサーバ上のディレクトリの移動に失敗しました。</translation>
     </message>
     <message>
-        <location filename="SelectDirectory.qml" line="472"/>
+        <location filename="SelectDirectory.qml" line="473"/>
         <source>Done</source>
         <translation>完了</translation>
     </message>
     <message>
-        <location filename="SelectDirectory.qml" line="517"/>
+        <location filename="SelectDirectory.qml" line="518"/>
         <source>You will need to select a directory.</source>
         <translation>ディレクトリを選択してください。</translation>
     </message>
     <message>
-        <location filename="SelectDirectory.qml" line="526"/>
+        <location filename="SelectDirectory.qml" line="527"/>
         <source>Back</source>
         <translation>戻る</translation>
     </message>
     <message>
-        <location filename="SelectDirectory.qml" line="563"/>
+        <location filename="SelectDirectory.qml" line="564"/>
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>
@@ -739,54 +727,54 @@
 <context>
     <name>SelectDirectoryPP</name>
     <message>
-        <location filename="PP/SelectDirectoryPP.qml" line="61"/>
-        <location filename="PP/SelectDirectoryPP.qml" line="82"/>
-        <location filename="PP/SelectDirectoryPP.qml" line="125"/>
-        <location filename="PP/SelectDirectoryPP.qml" line="163"/>
-        <location filename="PP/SelectDirectoryPP.qml" line="449"/>
-        <location filename="PP/SelectDirectoryPP.qml" line="521"/>
+        <location filename="PP/SelectDirectoryPP.qml" line="62"/>
+        <location filename="PP/SelectDirectoryPP.qml" line="84"/>
+        <location filename="PP/SelectDirectoryPP.qml" line="128"/>
+        <location filename="PP/SelectDirectoryPP.qml" line="167"/>
+        <location filename="PP/SelectDirectoryPP.qml" line="454"/>
+        <location filename="PP/SelectDirectoryPP.qml" line="527"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="PP/SelectDirectoryPP.qml" line="62"/>
-        <location filename="PP/SelectDirectoryPP.qml" line="83"/>
+        <location filename="PP/SelectDirectoryPP.qml" line="63"/>
+        <location filename="PP/SelectDirectoryPP.qml" line="85"/>
         <source>Connection failed.</source>
         <translation>接続に失敗しました。</translation>
     </message>
     <message>
-        <location filename="PP/SelectDirectoryPP.qml" line="95"/>
+        <location filename="PP/SelectDirectoryPP.qml" line="97"/>
         <source>Connection succeeded</source>
         <translation>接続に成功しました</translation>
     </message>
     <message>
-        <location filename="PP/SelectDirectoryPP.qml" line="126"/>
+        <location filename="PP/SelectDirectoryPP.qml" line="129"/>
         <source>Error on reception or invalid command.</source>
         <translation>受信エラーまたは無効なコマンドです。</translation>
     </message>
     <message>
-        <location filename="PP/SelectDirectoryPP.qml" line="164"/>
-        <location filename="PP/SelectDirectoryPP.qml" line="450"/>
+        <location filename="PP/SelectDirectoryPP.qml" line="168"/>
+        <location filename="PP/SelectDirectoryPP.qml" line="455"/>
         <source>Failed to move directory on remote server.</source>
         <translation>リモートサーバ上のディレクトリの移動に失敗しました。</translation>
     </message>
     <message>
-        <location filename="PP/SelectDirectoryPP.qml" line="477"/>
+        <location filename="PP/SelectDirectoryPP.qml" line="482"/>
         <source>Done</source>
         <translation>完了</translation>
     </message>
     <message>
-        <location filename="PP/SelectDirectoryPP.qml" line="522"/>
+        <location filename="PP/SelectDirectoryPP.qml" line="528"/>
         <source>You will need to select a directory.</source>
         <translation>ディレクトリを選択してください。</translation>
     </message>
     <message>
-        <location filename="PP/SelectDirectoryPP.qml" line="531"/>
+        <location filename="PP/SelectDirectoryPP.qml" line="537"/>
         <source>Back</source>
         <translation>戻る</translation>
     </message>
     <message>
-        <location filename="PP/SelectDirectoryPP.qml" line="568"/>
+        <location filename="PP/SelectDirectoryPP.qml" line="574"/>
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>
@@ -802,72 +790,72 @@
 <context>
     <name>SelectPP</name>
     <message>
-        <location filename="PP/SelectPP.qml" line="63"/>
-        <location filename="PP/SelectPP.qml" line="91"/>
-        <location filename="PP/SelectPP.qml" line="147"/>
-        <location filename="PP/SelectPP.qml" line="204"/>
-        <location filename="PP/SelectPP.qml" line="252"/>
-        <location filename="PP/SelectPP.qml" line="289"/>
-        <location filename="PP/SelectPP.qml" line="360"/>
-        <location filename="PP/SelectPP.qml" line="675"/>
+        <location filename="PP/SelectPP.qml" line="64"/>
+        <location filename="PP/SelectPP.qml" line="93"/>
+        <location filename="PP/SelectPP.qml" line="150"/>
+        <location filename="PP/SelectPP.qml" line="209"/>
+        <location filename="PP/SelectPP.qml" line="258"/>
+        <location filename="PP/SelectPP.qml" line="296"/>
+        <location filename="PP/SelectPP.qml" line="368"/>
+        <location filename="PP/SelectPP.qml" line="684"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="PP/SelectPP.qml" line="64"/>
-        <location filename="PP/SelectPP.qml" line="92"/>
+        <location filename="PP/SelectPP.qml" line="65"/>
+        <location filename="PP/SelectPP.qml" line="94"/>
         <source>Connection failed.</source>
         <translation>接続に失敗しました。</translation>
     </message>
     <message>
-        <location filename="PP/SelectPP.qml" line="104"/>
+        <location filename="PP/SelectPP.qml" line="106"/>
         <source>Connection succeeded</source>
         <translation>接続に成功しました</translation>
     </message>
     <message>
-        <location filename="PP/SelectPP.qml" line="148"/>
+        <location filename="PP/SelectPP.qml" line="151"/>
         <source>Error on reception or invalid command.</source>
         <translation>受信エラーまたは無効なコマンドです。</translation>
     </message>
     <message>
-        <location filename="PP/SelectPP.qml" line="191"/>
+        <location filename="PP/SelectPP.qml" line="195"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="PP/SelectPP.qml" line="192"/>
+        <location filename="PP/SelectPP.qml" line="196"/>
         <source>Incorrect administrator password or empty &quot;sshd_config&quot; file.</source>
         <translation>管理者パスワードが正しくないか、sshd_configファイルが空です。</translation>
     </message>
     <message>
-        <location filename="PP/SelectPP.qml" line="205"/>
+        <location filename="PP/SelectPP.qml" line="210"/>
         <source>Download of &quot;sshd_config&quot; file failed.</source>
         <translation>sshd_configファイルのダウンロードに失敗しました。</translation>
     </message>
     <message>
-        <location filename="PP/SelectPP.qml" line="253"/>
+        <location filename="PP/SelectPP.qml" line="259"/>
         <source>Could not download &quot;sshd_config&quot; file.</source>
         <translation>sshd_configファイルをダウンロードに失敗しました。</translation>
     </message>
     <message>
-        <location filename="PP/SelectPP.qml" line="290"/>
-        <location filename="PP/SelectPP.qml" line="361"/>
-        <location filename="PP/SelectPP.qml" line="676"/>
+        <location filename="PP/SelectPP.qml" line="297"/>
+        <location filename="PP/SelectPP.qml" line="369"/>
+        <location filename="PP/SelectPP.qml" line="685"/>
         <source>Failed to move directory on remote server.</source>
         <translation>リモートサーバ上のディレクトリの移動に失敗しました。</translation>
     </message>
     <message>
-        <location filename="PP/SelectPP.qml" line="703"/>
+        <location filename="PP/SelectPP.qml" line="712"/>
         <source>Select</source>
         <translation>選択</translation>
     </message>
     <message>
-        <location filename="PP/SelectPP.qml" line="736"/>
+        <location filename="PP/SelectPP.qml" line="745"/>
         <source>Back</source>
         <translation>戻る</translation>
     </message>
     <message>
-        <location filename="PP/SelectPP.qml" line="773"/>
+        <location filename="PP/SelectPP.qml" line="782"/>
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>

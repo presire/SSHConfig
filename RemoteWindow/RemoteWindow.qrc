@@ -9,7 +9,6 @@
         <file>ExtendQML/ErrorDialog.qml</file>
         <file>ExtendQML/PasswordDialog.qml</file>
         <file>ExtendQML/SelectFileDialog.qml</file>
-        <file>ExtendQML/WaitPopup.qml</file>
         <file>qtquickcontrols2.conf</file>
         <file>i18n/RemoteWindow_ja_JP.qm</file>
         <file>SelectDirectory.qml</file>
@@ -20,5 +19,6 @@
         <file>PP/SelectDirectoryPP.qml</file>
         <file>PP/SelectPP.qml</file>
         <file>ExtendQML/ErrorDialogPP.qml</file>
+        <file>ExtendQML/ProcessPopup.qml</file>
     </qresource>
 </RCC>

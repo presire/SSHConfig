@@ -21,14 +21,19 @@ Popup {
      property int    viewWidth:   0
      property string viewTitle:   ""
      property int    fontPadding: 0
-     property bool   bAutolose:   false
+     property int    timerTime:   2000
+     property bool   bAutoClose:  false
+
+     function fnCloseTimerStart() {
+         waitTimer.start()
+     }
 
      enter: Transition {
          NumberAnimation {
              property: "opacity"
              from: 0.0
              to: 1.0
-             duration: 2000
+             duration: 500
          }
      }
 
@@ -37,7 +42,7 @@ Popup {
              property: "opacity"
              from: 1.0
              to: 0.0
-             duration: 2000
+             duration: 500
          }
      }
 
@@ -81,8 +86,21 @@ Popup {
      }
 
      onClosed: {
-         if (bAutolose) {
+         if (bAutoClose) {
              parentName.close()
+         }
+     }
+
+     Timer {
+         id: waitTimer
+
+         interval: waitPopup.timerTime
+         repeat: false
+         running: false
+
+         onTriggered: {
+             waitTimer.stop();
+             waitPopup.close();
          }
      }
  }

@@ -77,10 +77,11 @@ ApplicationWindow {
         if (bConnect === false) {
             errMsg = remoteClient.getErrorMessage()
 
-            componentDialog = Qt.createComponent("qrc:/ExtendQML/ErrorDialog.qml");
+            componentDialog = Qt.createComponent("qrc:/ExtendQML/ErrorDialogPP.qml");
             if (componentDialog.status === Component.Ready) {
                 errorDialog = componentDialog.createObject(reloadDialog,
                                                            {bDark: reloadDialog.bDark, fontPadding: reloadDialog.fontPadding,
+                                                            mainWidth: reloadDialog.width,
                                                             messageTitle: qsTr("Error"),
                                                             messageText: qsTr("Connection failed.") + "<br>" + errMsg});
                 errorDialog.show();
@@ -99,6 +100,7 @@ ApplicationWindow {
                 if (componentDialog.status === Component.Ready) {
                     errorDialog = componentDialog.createObject(reloadDialog,
                                                                {bDark: reloadDialog.bDark, fontPadding: reloadDialog.fontPadding,
+                                                                mainWidth: reloadDialog.width,
                                                                 messageTitle: qsTr("Error"),
                                                                 messageText: qsTr("Connection failed.") + "<br>" + errMsg});
                     errorDialog.show();

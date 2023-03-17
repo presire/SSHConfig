@@ -221,7 +221,7 @@ int CSSLSocket::Command(const QByteArray &data)
 
         strData        = Command;
         strCommandPath = CommandPath;
-        arySSHDOptions = Option.split(QRegExp(" "), Qt::KeepEmptyParts);
+        arySSHDOptions = Option.split("\\\\//", Qt::KeepEmptyParts);
         bTestOption    = bTest;
     }
     else if(strData.leftRef(4) == "push")
@@ -534,7 +534,7 @@ std::tuple<int, QString, QString> CSSLSocket::DirCommand(QString &strDirCommand)
 // Get option for "sshd" command.
 std::tuple<int, QString, QString, bool, QString> CSSLSocket::SSHDCommand(QString &strCommandCommand)
 {
-    auto aryData = strCommandCommand.split(" ", Qt::KeepEmptyParts);
+    auto aryData = strCommandCommand.split("\\\\//", Qt::KeepEmptyParts);
     if(aryData.length() > 8)
     {
         return std::make_tuple(-1, "", "", false, "Unknown sshd command");
@@ -558,7 +558,7 @@ std::tuple<int, QString, QString, bool, QString> CSSLSocket::SSHDCommand(QString
     aryData.removeAt(0);
 
     // Get sshd command options.
-    auto strSSHDOptions = aryData.join(" ");
+    auto strSSHDOptions = aryData.join("\\\\//");
 
     bool bTest = false;
     if(aryData.contains("-t", Qt::CaseSensitive))

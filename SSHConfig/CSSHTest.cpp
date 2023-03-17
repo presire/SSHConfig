@@ -179,7 +179,7 @@ int CSSHTest::executeRemoteSSHDCommand(QString strSSHDComandPath, QString strRem
             break;
     }
 
-    auto strExecuteCommand = QString("sshd") + QString(" ") + strSSHDComandPath + QString(" ") + aryOptions.join(" ");
+    auto strExecuteCommand = QString("sshd") + QString("\\\\//") + strSSHDComandPath + QString("\\\\//") + aryOptions.join("\\\\//");
 
     if (m_clsRemote == nullptr)
     {

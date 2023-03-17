@@ -273,7 +273,7 @@
     <name>ModeSettings</name>
     <message>
         <location filename="ModeSettings.qml" line="158"/>
-        <location filename="ModeSettings.qml" line="187"/>
+        <location filename="ModeSettings.qml" line="188"/>
         <source>Server Mode</source>
         <translation>サーバモード</translation>
     </message>
@@ -288,112 +288,112 @@
         <translation>この設定を無効にすることにより、リモートサーバ上のSSHを設定することができます。</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="229"/>
+        <location filename="ModeSettings.qml" line="230"/>
         <source>Need Administrator Password</source>
         <translation>管理者権限</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="241"/>
+        <location filename="ModeSettings.qml" line="242"/>
         <source>By disabling this setting,</source>
         <translation>この設定を無効にすることは、</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="242"/>
+        <location filename="ModeSettings.qml" line="243"/>
         <source>you can read and write &quot;sshd_config&quot; without password,</source>
         <translation>管理者権限が必要とされる場面 (sshd_configファイルを読み書き) において、</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="243"/>
+        <location filename="ModeSettings.qml" line="244"/>
         <source>in situations where an administrator password is required.</source>
         <translation>管理者権限なしでsshd_configファイルを読み書きできるようになります。</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="244"/>
+        <location filename="ModeSettings.qml" line="245"/>
         <source>&lt;u&gt;&lt;B&gt;This setting is valid only in Server Mode because related to Polkit Action.&lt;/B&gt;&lt;/u&gt;</source>
         <translation>&lt;u&gt;&lt;B&gt;この設定はPolkit Actionに関する設定のため、サーバモードのみ有効になります。&lt;/B&gt;&lt;/u&gt;</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="245"/>
+        <location filename="ModeSettings.qml" line="246"/>
         <source>&lt;u&gt;&lt;B&gt;Note that disabling this setting may be a security risk.&lt;/B&gt;&lt;/u&gt;</source>
         <translation>&lt;u&gt;&lt;B&gt;管理者権限なしで実行する場合は、セキュリティリスクがあるかもしれないことに注意して下さい。&lt;/B&gt;&lt;/u&gt;</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="292"/>
+        <location filename="ModeSettings.qml" line="294"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="293"/>
+        <location filename="ModeSettings.qml" line="295"/>
         <source>Failed to change the settings.</source>
         <translation>設定の変更に失敗しました。</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="305"/>
+        <location filename="ModeSettings.qml" line="307"/>
         <source>Font Size</source>
         <translation>フォントサイズ</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="340"/>
+        <location filename="ModeSettings.qml" line="342"/>
         <source>Small</source>
         <translation>小</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="353"/>
+        <location filename="ModeSettings.qml" line="355"/>
         <source>Medium</source>
         <translation>中</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="366"/>
+        <location filename="ModeSettings.qml" line="368"/>
         <source>Large</source>
         <translation>大</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="380"/>
+        <location filename="ModeSettings.qml" line="382"/>
         <source>Dark Theme</source>
         <translation>ダークテーマ</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="392"/>
+        <location filename="ModeSettings.qml" line="394"/>
         <source>When you restart this software, the color theme will change.</source>
         <translation>次回の起動で、この設定が有効になります。</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="405"/>
+        <location filename="ModeSettings.qml" line="408"/>
         <source>Dark</source>
         <translation>有効</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="425"/>
+        <location filename="ModeSettings.qml" line="428"/>
         <source>Language</source>
         <translation>言語設定</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="437"/>
+        <location filename="ModeSettings.qml" line="440"/>
         <source>When you restart this software, the locale will change.</source>
         <translation>次回の起動で、この設定が有効になります。</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="499"/>
+        <location filename="ModeSettings.qml" line="503"/>
         <source>Default</source>
         <translation>デフォルト</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="500"/>
+        <location filename="ModeSettings.qml" line="504"/>
         <source>Jap</source>
         <translation>日本語</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="521"/>
+        <location filename="ModeSettings.qml" line="525"/>
         <source>Save</source>
         <translation>保存</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="578"/>
+        <location filename="ModeSettings.qml" line="582"/>
         <source>Save &amp; Restart</source>
         <translation>保存して再起動</translation>
     </message>
     <message>
-        <location filename="ModeSettings.qml" line="678"/>
+        <location filename="ModeSettings.qml" line="682"/>
         <source>Saved the settings</source>
         <translation>設定を保存しました</translation>
     </message>
@@ -607,6 +607,34 @@ Please be careful.</source>
         <location filename="ExtendQML/QuitDialog.qml" line="133"/>
         <source>Cancel</source>
         <translation>キャンセル</translation>
+    </message>
+</context>
+<context>
+    <name>ReloadDialog</name>
+    <message>
+        <location filename="ExtendQML/ReloadDialog.qml" line="13"/>
+        <source>Reload</source>
+        <translation type="finished">再読み込み</translation>
+    </message>
+    <message>
+        <location filename="ExtendQML/ReloadDialog.qml" line="66"/>
+        <source>Do you want to reload the sshd_config file?</source>
+        <translation type="finished">sshd_configファイルを再読み込みしますか？</translation>
+    </message>
+    <message>
+        <location filename="ExtendQML/ReloadDialog.qml" line="67"/>
+        <source>Do you want to re-download the sshd_config file?</source>
+        <translation type="finished">sshd_configファイルを再ダウンロードしますか？</translation>
+    </message>
+    <message>
+        <location filename="ExtendQML/ReloadDialog.qml" line="90"/>
+        <source>OK</source>
+        <translation type="finished">OK</translation>
+    </message>
+    <message>
+        <location filename="ExtendQML/ReloadDialog.qml" line="129"/>
+        <source>Cancel</source>
+        <translation type="finished">キャンセル</translation>
     </message>
 </context>
 <context>
@@ -895,173 +923,173 @@ Please be careful.</source>
         <translation>SSH Server</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="45"/>
-        <location filename="SSHServer.qml" line="52"/>
-        <location filename="SSHServer.qml" line="70"/>
-        <location filename="SSHServer.qml" line="186"/>
-        <location filename="SSHServer.qml" line="207"/>
-        <location filename="SSHServer.qml" line="211"/>
-        <location filename="SSHServer.qml" line="316"/>
-        <location filename="SSHServer.qml" line="320"/>
-        <location filename="SSHServer.qml" line="1013"/>
+        <location filename="SSHServer.qml" line="48"/>
+        <location filename="SSHServer.qml" line="55"/>
+        <location filename="SSHServer.qml" line="73"/>
+        <location filename="SSHServer.qml" line="194"/>
+        <location filename="SSHServer.qml" line="215"/>
+        <location filename="SSHServer.qml" line="219"/>
+        <location filename="SSHServer.qml" line="324"/>
+        <location filename="SSHServer.qml" line="328"/>
+        <location filename="SSHServer.qml" line="1021"/>
         <source>Read/Reload</source>
         <translation>(再)読み込み</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="46"/>
-        <location filename="SSHServer.qml" line="53"/>
-        <location filename="SSHServer.qml" line="71"/>
-        <location filename="SSHServer.qml" line="188"/>
-        <location filename="SSHServer.qml" line="208"/>
-        <location filename="SSHServer.qml" line="213"/>
-        <location filename="SSHServer.qml" line="317"/>
-        <location filename="SSHServer.qml" line="321"/>
-        <location filename="SSHServer.qml" line="1064"/>
-        <location filename="SSHServer.qml" line="1135"/>
-        <location filename="SSHServer.qml" line="1138"/>
+        <location filename="SSHServer.qml" line="49"/>
+        <location filename="SSHServer.qml" line="56"/>
+        <location filename="SSHServer.qml" line="74"/>
+        <location filename="SSHServer.qml" line="196"/>
+        <location filename="SSHServer.qml" line="216"/>
+        <location filename="SSHServer.qml" line="221"/>
+        <location filename="SSHServer.qml" line="325"/>
+        <location filename="SSHServer.qml" line="329"/>
+        <location filename="SSHServer.qml" line="1093"/>
+        <location filename="SSHServer.qml" line="1164"/>
+        <location filename="SSHServer.qml" line="1167"/>
         <source>Write</source>
         <translation>書き込み</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="124"/>
-        <location filename="SSHServer.qml" line="463"/>
+        <location filename="SSHServer.qml" line="132"/>
+        <location filename="SSHServer.qml" line="471"/>
         <source>Failed to upload sshd_config file.</source>
         <translation>sshd_configファイルのアップロードが失敗しました。</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="130"/>
+        <location filename="SSHServer.qml" line="138"/>
         <source>Upload &quot;sshd_config&quot; file to remote server</source>
         <translation>sshd_configファイルのアップロードが完了しました</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="221"/>
-        <location filename="SSHServer.qml" line="329"/>
+        <location filename="SSHServer.qml" line="229"/>
+        <location filename="SSHServer.qml" line="337"/>
         <source>Read &quot;sshd_config&quot; file</source>
         <translation>sshd_configファイルの読み込みが完了しました</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="237"/>
-        <location filename="SSHServer.qml" line="345"/>
+        <location filename="SSHServer.qml" line="245"/>
+        <location filename="SSHServer.qml" line="353"/>
         <source>There are duplicate values in the non-duplicable items.</source>
         <translation>下記の項目に対して、複数の設定が重複しています。</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="395"/>
-        <location filename="SSHServer.qml" line="415"/>
+        <location filename="SSHServer.qml" line="403"/>
+        <location filename="SSHServer.qml" line="423"/>
         <source>Write Error</source>
         <translation>書き込みエラー</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="396"/>
-        <location filename="SSHServer.qml" line="416"/>
+        <location filename="SSHServer.qml" line="404"/>
+        <location filename="SSHServer.qml" line="424"/>
         <source>Failed to write temporary Json file.</source>
         <translation>Jsonファイル (テンポラリー) の書き込みに失敗しました。</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="438"/>
+        <location filename="SSHServer.qml" line="446"/>
         <source>Copy Error</source>
         <translation>コピーエラー</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="439"/>
+        <location filename="SSHServer.qml" line="447"/>
         <source>Failed to copy sshd_config file.</source>
         <translation>sshd_configファイルのコピーに失敗しました。</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="462"/>
+        <location filename="SSHServer.qml" line="470"/>
         <source>Upload Error</source>
         <translation>アップロードエラー</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="484"/>
-        <location filename="SSHServer.qml" line="505"/>
+        <location filename="SSHServer.qml" line="492"/>
+        <location filename="SSHServer.qml" line="513"/>
         <source>Reload Error</source>
         <translation>再読み込みエラー</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="485"/>
+        <location filename="SSHServer.qml" line="493"/>
         <source>Failed to reload sshd_config file.</source>
         <translation>sshd_configファイルの再読み込みに失敗しました。</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="506"/>
+        <location filename="SSHServer.qml" line="514"/>
         <source>Failed to reload Json file.</source>
         <translation>Jsonファイルの再読み込みに失敗しました。</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="515"/>
+        <location filename="SSHServer.qml" line="523"/>
         <source>Write &quot;sshd_config&quot; file</source>
         <translation>sshd_configファイルの書き込みが完了しました</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="538"/>
+        <location filename="SSHServer.qml" line="546"/>
         <source>General</source>
         <translation>全般</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="615"/>
+        <location filename="SSHServer.qml" line="623"/>
         <source>Authentication</source>
         <translation>認証</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="693"/>
+        <location filename="SSHServer.qml" line="701"/>
         <source>Kerberos</source>
         <translation>ケルベロス</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="771"/>
+        <location filename="SSHServer.qml" line="779"/>
         <source>Other Settings</source>
         <translation>その他の設定</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="849"/>
+        <location filename="SSHServer.qml" line="857"/>
         <source>Editor</source>
         <translation>エディタ</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="188"/>
-        <location filename="SSHServer.qml" line="208"/>
-        <location filename="SSHServer.qml" line="213"/>
-        <location filename="SSHServer.qml" line="1126"/>
-        <location filename="SSHServer.qml" line="1129"/>
+        <location filename="SSHServer.qml" line="196"/>
+        <location filename="SSHServer.qml" line="216"/>
+        <location filename="SSHServer.qml" line="221"/>
+        <location filename="SSHServer.qml" line="1155"/>
+        <location filename="SSHServer.qml" line="1158"/>
         <source>Write(editor)</source>
         <translation>書き込み(エディタ)</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="236"/>
-        <location filename="SSHServer.qml" line="344"/>
+        <location filename="SSHServer.qml" line="244"/>
+        <location filename="SSHServer.qml" line="352"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="947"/>
+        <location filename="SSHServer.qml" line="955"/>
         <source>Click the right icon, select &quot;sshd_config&quot;. Ex: /etc/ssh/sshd_config</source>
         <translation>右のアイコンをクリックしてsshd_configファイルを選択</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="123"/>
-        <location filename="SSHServer.qml" line="163"/>
-        <location filename="SSHServer.qml" line="289"/>
+        <location filename="SSHServer.qml" line="131"/>
+        <location filename="SSHServer.qml" line="171"/>
+        <location filename="SSHServer.qml" line="297"/>
         <source>Read Error</source>
         <translation>読み込みエラー</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="52"/>
-        <location filename="SSHServer.qml" line="53"/>
-        <location filename="SSHServer.qml" line="186"/>
-        <location filename="SSHServer.qml" line="188"/>
-        <location filename="SSHServer.qml" line="211"/>
-        <location filename="SSHServer.qml" line="213"/>
-        <location filename="SSHServer.qml" line="320"/>
-        <location filename="SSHServer.qml" line="321"/>
-        <location filename="SSHServer.qml" line="1126"/>
-        <location filename="SSHServer.qml" line="1135"/>
+        <location filename="SSHServer.qml" line="55"/>
+        <location filename="SSHServer.qml" line="56"/>
+        <location filename="SSHServer.qml" line="194"/>
+        <location filename="SSHServer.qml" line="196"/>
+        <location filename="SSHServer.qml" line="219"/>
+        <location filename="SSHServer.qml" line="221"/>
+        <location filename="SSHServer.qml" line="328"/>
+        <location filename="SSHServer.qml" line="329"/>
+        <location filename="SSHServer.qml" line="1155"/>
+        <location filename="SSHServer.qml" line="1164"/>
         <source>(Req: Auth)</source>
         <translation>(要: 管理者権限)</translation>
     </message>
     <message>
-        <location filename="SSHServer.qml" line="164"/>
-        <location filename="SSHServer.qml" line="290"/>
+        <location filename="SSHServer.qml" line="172"/>
+        <location filename="SSHServer.qml" line="298"/>
         <source>Failed to read sshd_config file.</source>
         <translation>sshd_configファイルの読み込みに失敗しました。</translation>
     </message>
@@ -1074,173 +1102,173 @@ Please be careful.</source>
         <translation>SSH Server</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="43"/>
-        <location filename="PP/SSHServerPP.qml" line="50"/>
-        <location filename="PP/SSHServerPP.qml" line="68"/>
-        <location filename="PP/SSHServerPP.qml" line="180"/>
-        <location filename="PP/SSHServerPP.qml" line="201"/>
-        <location filename="PP/SSHServerPP.qml" line="205"/>
-        <location filename="PP/SSHServerPP.qml" line="310"/>
-        <location filename="PP/SSHServerPP.qml" line="314"/>
-        <location filename="PP/SSHServerPP.qml" line="1027"/>
+        <location filename="PP/SSHServerPP.qml" line="47"/>
+        <location filename="PP/SSHServerPP.qml" line="54"/>
+        <location filename="PP/SSHServerPP.qml" line="72"/>
+        <location filename="PP/SSHServerPP.qml" line="193"/>
+        <location filename="PP/SSHServerPP.qml" line="214"/>
+        <location filename="PP/SSHServerPP.qml" line="218"/>
+        <location filename="PP/SSHServerPP.qml" line="323"/>
+        <location filename="PP/SSHServerPP.qml" line="327"/>
+        <location filename="PP/SSHServerPP.qml" line="1040"/>
         <source>Read/Reload</source>
         <translation>(再)読み込み</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="44"/>
-        <location filename="PP/SSHServerPP.qml" line="51"/>
-        <location filename="PP/SSHServerPP.qml" line="69"/>
-        <location filename="PP/SSHServerPP.qml" line="182"/>
-        <location filename="PP/SSHServerPP.qml" line="202"/>
-        <location filename="PP/SSHServerPP.qml" line="207"/>
-        <location filename="PP/SSHServerPP.qml" line="311"/>
-        <location filename="PP/SSHServerPP.qml" line="315"/>
-        <location filename="PP/SSHServerPP.qml" line="1078"/>
-        <location filename="PP/SSHServerPP.qml" line="1153"/>
-        <location filename="PP/SSHServerPP.qml" line="1156"/>
+        <location filename="PP/SSHServerPP.qml" line="48"/>
+        <location filename="PP/SSHServerPP.qml" line="55"/>
+        <location filename="PP/SSHServerPP.qml" line="73"/>
+        <location filename="PP/SSHServerPP.qml" line="195"/>
+        <location filename="PP/SSHServerPP.qml" line="215"/>
+        <location filename="PP/SSHServerPP.qml" line="220"/>
+        <location filename="PP/SSHServerPP.qml" line="324"/>
+        <location filename="PP/SSHServerPP.qml" line="328"/>
+        <location filename="PP/SSHServerPP.qml" line="1113"/>
+        <location filename="PP/SSHServerPP.qml" line="1188"/>
+        <location filename="PP/SSHServerPP.qml" line="1191"/>
         <source>Write</source>
         <translation>書き込み</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="50"/>
-        <location filename="PP/SSHServerPP.qml" line="51"/>
-        <location filename="PP/SSHServerPP.qml" line="180"/>
-        <location filename="PP/SSHServerPP.qml" line="182"/>
-        <location filename="PP/SSHServerPP.qml" line="205"/>
-        <location filename="PP/SSHServerPP.qml" line="207"/>
-        <location filename="PP/SSHServerPP.qml" line="314"/>
-        <location filename="PP/SSHServerPP.qml" line="315"/>
-        <location filename="PP/SSHServerPP.qml" line="1144"/>
-        <location filename="PP/SSHServerPP.qml" line="1153"/>
+        <location filename="PP/SSHServerPP.qml" line="54"/>
+        <location filename="PP/SSHServerPP.qml" line="55"/>
+        <location filename="PP/SSHServerPP.qml" line="193"/>
+        <location filename="PP/SSHServerPP.qml" line="195"/>
+        <location filename="PP/SSHServerPP.qml" line="218"/>
+        <location filename="PP/SSHServerPP.qml" line="220"/>
+        <location filename="PP/SSHServerPP.qml" line="327"/>
+        <location filename="PP/SSHServerPP.qml" line="328"/>
+        <location filename="PP/SSHServerPP.qml" line="1179"/>
+        <location filename="PP/SSHServerPP.qml" line="1188"/>
         <source>(Req: Auth)</source>
         <translation>(要: 管理者権限)</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="117"/>
-        <location filename="PP/SSHServerPP.qml" line="157"/>
-        <location filename="PP/SSHServerPP.qml" line="283"/>
+        <location filename="PP/SSHServerPP.qml" line="130"/>
+        <location filename="PP/SSHServerPP.qml" line="170"/>
+        <location filename="PP/SSHServerPP.qml" line="296"/>
         <source>Read Error</source>
         <translation>読み込みエラー</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="118"/>
-        <location filename="PP/SSHServerPP.qml" line="457"/>
+        <location filename="PP/SSHServerPP.qml" line="131"/>
+        <location filename="PP/SSHServerPP.qml" line="470"/>
         <source>Failed to upload sshd_config file.</source>
         <translation>sshd_configファイルのアップロードに失敗しました。</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="124"/>
+        <location filename="PP/SSHServerPP.qml" line="137"/>
         <source>Upload &quot;sshd_config&quot; file to remote server</source>
         <translation>sshd_configファイルのアップロードが完了しました</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="158"/>
-        <location filename="PP/SSHServerPP.qml" line="284"/>
+        <location filename="PP/SSHServerPP.qml" line="171"/>
+        <location filename="PP/SSHServerPP.qml" line="297"/>
         <source>Failed to read sshd_config file.</source>
         <translation>sshd_configファイルの読み込みに失敗しました。</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="215"/>
-        <location filename="PP/SSHServerPP.qml" line="323"/>
+        <location filename="PP/SSHServerPP.qml" line="228"/>
+        <location filename="PP/SSHServerPP.qml" line="336"/>
         <source>Read &quot;sshd_config&quot; file</source>
         <translation>sshd_configファイルの読み込みが完了しました</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="230"/>
-        <location filename="PP/SSHServerPP.qml" line="338"/>
+        <location filename="PP/SSHServerPP.qml" line="243"/>
+        <location filename="PP/SSHServerPP.qml" line="351"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="231"/>
-        <location filename="PP/SSHServerPP.qml" line="339"/>
+        <location filename="PP/SSHServerPP.qml" line="244"/>
+        <location filename="PP/SSHServerPP.qml" line="352"/>
         <source>There are duplicate values in the non-duplicable items.</source>
         <translation>下記の項目に対して、複数の設定が重複しています。</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="389"/>
-        <location filename="PP/SSHServerPP.qml" line="409"/>
+        <location filename="PP/SSHServerPP.qml" line="402"/>
+        <location filename="PP/SSHServerPP.qml" line="422"/>
         <source>Write Error</source>
         <translation>書き込みエラー</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="390"/>
-        <location filename="PP/SSHServerPP.qml" line="410"/>
+        <location filename="PP/SSHServerPP.qml" line="403"/>
+        <location filename="PP/SSHServerPP.qml" line="423"/>
         <source>Failed to write temporary Json file.</source>
         <translation>Jsonファイル (テンポラリー) の書き込みに失敗しました。</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="432"/>
+        <location filename="PP/SSHServerPP.qml" line="445"/>
         <source>Copy Error</source>
         <translation>コピーエラー</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="433"/>
+        <location filename="PP/SSHServerPP.qml" line="446"/>
         <source>Failed to copy sshd_config file.</source>
         <translation>sshd_configファイルのコピーに失敗しました。</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="456"/>
+        <location filename="PP/SSHServerPP.qml" line="469"/>
         <source>Upload Error</source>
         <translation>アップロードエラー</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="478"/>
-        <location filename="PP/SSHServerPP.qml" line="499"/>
+        <location filename="PP/SSHServerPP.qml" line="491"/>
+        <location filename="PP/SSHServerPP.qml" line="512"/>
         <source>Reload Error</source>
         <translation>再読み込みエラー</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="479"/>
+        <location filename="PP/SSHServerPP.qml" line="492"/>
         <source>Failed to reload sshd_config file.</source>
         <translation>sshd_configファイルの再読み込みに失敗しました。</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="500"/>
+        <location filename="PP/SSHServerPP.qml" line="513"/>
         <source>Failed to reload Json file.</source>
         <translation>Jsonファイルの再読み込みに失敗しました。</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="509"/>
+        <location filename="PP/SSHServerPP.qml" line="522"/>
         <source>Write &quot;sshd_config&quot; file</source>
         <translation>sshd_configファイルの書き込みが完了しました</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="535"/>
+        <location filename="PP/SSHServerPP.qml" line="548"/>
         <source>General</source>
         <translation>全般</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="612"/>
+        <location filename="PP/SSHServerPP.qml" line="625"/>
         <source>Authentication</source>
         <translation>認証</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="690"/>
+        <location filename="PP/SSHServerPP.qml" line="703"/>
         <source>Kerberos</source>
         <translation>ケルベロス</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="768"/>
+        <location filename="PP/SSHServerPP.qml" line="781"/>
         <source>Other Settings</source>
         <translation>その他の設定</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="846"/>
+        <location filename="PP/SSHServerPP.qml" line="859"/>
         <source>Editor</source>
         <translation>エディタ</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="960"/>
+        <location filename="PP/SSHServerPP.qml" line="973"/>
         <source>Click the right icon, select &quot;sshd_config&quot;. Ex: /etc/ssh/sshd_config</source>
         <translation>右のアイコンをクリックしてsshd_configファイルを選択</translation>
     </message>
     <message>
-        <location filename="PP/SSHServerPP.qml" line="182"/>
-        <location filename="PP/SSHServerPP.qml" line="202"/>
-        <location filename="PP/SSHServerPP.qml" line="207"/>
-        <location filename="PP/SSHServerPP.qml" line="1144"/>
-        <location filename="PP/SSHServerPP.qml" line="1147"/>
+        <location filename="PP/SSHServerPP.qml" line="195"/>
+        <location filename="PP/SSHServerPP.qml" line="215"/>
+        <location filename="PP/SSHServerPP.qml" line="220"/>
+        <location filename="PP/SSHServerPP.qml" line="1179"/>
+        <location filename="PP/SSHServerPP.qml" line="1182"/>
         <source>Write(editor)</source>
         <translation>書き込み(エディタ)</translation>
     </message>
@@ -1565,173 +1593,173 @@ Please be careful.</source>
         <translation>(公開鍵認証によるrootログインは可能です）</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="334"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="335"/>
         <source>Retry Maximum number of authentication :</source>
         <translation>認証の最大試行回数 :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="346"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="348"/>
         <source>When more than half of the specified values of authentication fail, subsequent failures are logged.</source>
         <translation>指定した値の半分以上の認証に失敗した場合、それ以降の失敗を記録します。</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="360"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="363"/>
         <source>default is 6</source>
         <translation>デフォルトは&quot;6&quot;</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="374"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="377"/>
         <source>Maximum simultaneous connections :</source>
         <translation>最大同時接続数 :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="386"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="389"/>
         <source>Specifies the maximum number of shell, login, subsystem(e.g. sftp) sessions permitted per network connection.</source>
         <translation>ネットワーク接続ごとに許可されるシェル、ログイン、サブシステム (例: sftp) セッションの最大数を指定します。</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="387"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="390"/>
         <source>MaxSessions to &quot;1&quot; will effectively disable session multiplexing.</source>
         <translation>MaxSessionsを&quot;1&quot;に設定する場合、セッションの多重化を効果的に無効にすることができます。</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="388"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="391"/>
         <source>MaxSessions to &quot;0&quot; disables all shell, login, and subsystem sessions, but allows transfers.</source>
         <translation>MaxSessionsを&quot;0&quot;にすると、シェル、ログイン、サブシステムのすべてのセッションが無効になりますが、転送は可能です。</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="403"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="407"/>
         <source>default is 10</source>
         <translation>デフォルトは&quot;10&quot;</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="417"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="421"/>
         <source>Allow password authentication :</source>
         <translation>パスワード認証の許可 :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="483"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="487"/>
         <source>Allow login for accounts with empty passwords :</source>
         <translation>パスワードが無いアカウントへのログインを許可する :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="549"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="553"/>
         <source>Allow public key authentication :</source>
         <translation>公開鍵認証の許可 :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="625"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="629"/>
         <source>Path to public key file stored on SSH server :</source>
         <translation>SSHサーバに保存されている公開鍵ファイルのパス :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="693"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="697"/>
         <source>Specify file name that contains public key used for authentication.</source>
         <translation>認証に使用する公開鍵が格納されているファイル名を指定します。</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="694"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="698"/>
         <source>Input absolute path or relative path from the user&apos;s home directory.</source>
         <translation>ユーザのホームディレクトリからの絶対パスまたは相対パスを入力します。</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="716"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="721"/>
         <source>Specify command used to get public key :</source>
         <translation>公開鍵の取得に使用するコマンドを指定する :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="733"/>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="759"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="738"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="764"/>
         <source>default is none</source>
         <translation>デフォルトは&quot;none&quot;</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="742"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="747"/>
         <source>Specify user that execute command used to get public key :</source>
         <translation>公開鍵の取得に使用するコマンドを実行するユーザを指定する :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="768"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="773"/>
         <source>Allow rhosts or /etc/hosts.equiv authentication upon successful public key authentication :</source>
         <translation>公開鍵認証に成功した場合、rhostsまたは/etc/hosts.equivの認証を許可する :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="835"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="840"/>
         <source>Do not use ~/.ssh/known_hosts file for RhostsRSAAuthentication or HostbasedAuthentication authentication :</source>
         <translation>RhostsRSAAuthenticationおよびHostbasedAuthentication認証では、~/.ssh/known_hostsファイルを使用しない :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="902"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="907"/>
         <source>Do not use .rhosts and .shosts in RhostsRSAAuthentication or HostbasedAuthentication authentication :</source>
         <translation>RhostsRSAAuthenticationまたはHostbasedAuthentication認証で.rhostsおよび.shostsを使用しない :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="969"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="974"/>
         <source>Allow challenge response authentication</source>
         <translation>チャレンジ・レスポンス認証の許可</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="982"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="987"/>
         <source>Allow keyboard interactive authentication.</source>
         <translation>キーボード対話型認証を許可します。</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="983"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="988"/>
         <source>All authentication in login.conf is supported.</source>
         <translation>これは、login.confに記述されているすべての認証に対応しています。</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="984"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="989"/>
         <source>Note : UsePAM must be set to &quot;Yes&quot;, in order to authenticate using PAM.</source>
         <translation>PAMによる認証を行うには、UsePAMを&quot;Yes&quot;に設定する必要があります。</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="1049"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="1054"/>
         <source>Allow authentication by PAM (Pluggable Authentication Module) interface :</source>
         <translation>PAM (Pluggable Authentication Module) インターフェースによる認証を許可する :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="1062"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="1067"/>
         <source>If set to yes, either &quot;PasswordAuthentication&quot; or &quot;ChallengeResponseAuthentication&quot; must be set to yes.</source>
         <translation>Yesに設定した場合、&quot;PasswordAuthentication&quot;または&quot;ChallengeResponseAuthentication&quot;のいずれかを&quot;Yes&quot;に設定する必要があります。</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="1063"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="1068"/>
         <source>Note : Then, &quot;sshd&quot; command cannot be run as non-root user.</source>
         <translation>注意：この場合、root以外のユーザで sshdコマンドを実行することはできません。</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="1128"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="1133"/>
         <source>Public key authentication option :</source>
         <translation>公開鍵認証オプションを指定する :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="1213"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="1220"/>
         <source>Hash algorithm used when logging fingerprint :</source>
         <translation>フィンガープリントを記録する時に使用するハッシュアルゴリズム :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="1141"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="1147"/>
         <source>Require user unless overridden by &quot;AuthorizedKeysFile&quot; option.</source>
         <translation>&quot;AuthorizedKeysFile&quot;オプションで上書きされない限り、ユーザを必要とします。</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="1143"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="1149"/>
         <source>Public key authentication using FIDO authentication algorithm (ecdsa-sk or ed25519-sk),</source>
         <translation>FIDO認証アルゴリズム（ecdsa-skまたはed25519-sk）を使用した公開鍵認証であり、</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="1144"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="1150"/>
         <source>which always requires signature attesting that user present has explicitly confirmed authentication.</source>
         <translation>その場にいるユーザが明示的に認証を確認したことを証明する署名が常に必要です。</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="1145"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="1151"/>
         <source>In this case, overriding with the &quot;AuthorizedKeysFile&quot; option is disabled.</source>
         <translation>この場合、&quot;AuthorizedKeysFile&quot;オプションによる上書きは無効となります。</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewAuthentication.qml" line="1147"/>
+        <location filename="SSHServerQML/TabViewAuthentication.qml" line="1153"/>
         <source>Require FIDO key signature that proves that user has been authenticated with PIN, etc.</source>
         <translation>PINなどでユーザを認証したことを証明するFIDO鍵署名を要求します。</translation>
     </message>
@@ -2071,102 +2099,102 @@ Please be careful.</source>
         <translation>例: 22, 49152, 65000</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewGeneral.qml" line="287"/>
+        <location filename="SSHServerQML/TabViewGeneral.qml" line="288"/>
         <source>Protocols that allow connections :</source>
         <translation>接続を許可するプロトコル :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewGeneral.qml" line="301"/>
+        <location filename="SSHServerQML/TabViewGeneral.qml" line="302"/>
         <source>Allow both IPv4 and IPv6.</source>
         <translation>IPv4とIPv6の両方を許可します。</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewGeneral.qml" line="303"/>
+        <location filename="SSHServerQML/TabViewGeneral.qml" line="304"/>
         <source>Allow IPv4 only.</source>
         <translation>IPv4のみを許可します。</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewGeneral.qml" line="305"/>
+        <location filename="SSHServerQML/TabViewGeneral.qml" line="306"/>
         <source>Allow IPv6 only.</source>
         <translation>IPv6のみを許可します。</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewGeneral.qml" line="372"/>
+        <location filename="SSHServerQML/TabViewGeneral.qml" line="373"/>
         <source>Session key regeneration :</source>
         <translation>セッション鍵の再生成 :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewGeneral.qml" line="386"/>
+        <location filename="SSHServerQML/TabViewGeneral.qml" line="387"/>
         <source>If too small, performance may be adversely affected.</source>
         <translation>値が小さすぎる場合、パフォーマンスに悪影響が出る場合があります。</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewGeneral.qml" line="387"/>
+        <location filename="SSHServerQML/TabViewGeneral.qml" line="388"/>
         <source>&quot;default&quot;(Initial setting) is to regenerate at appropriate times between 1[GB] and 4[GB].</source>
         <translation>&quot;default&quot;は、1[GB]～4[GB]の間で適切なタイミングで再生成が行われます。</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewGeneral.qml" line="409"/>
+        <location filename="SSHServerQML/TabViewGeneral.qml" line="410"/>
         <source>&quot;default&quot; is selected</source>
         <translation>&quot;default&quot;が選択されています</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewGeneral.qml" line="493"/>
+        <location filename="SSHServerQML/TabViewGeneral.qml" line="494"/>
         <source>Exchange key Time [sec] :</source>
         <translation>鍵を交換する時間 [sec] :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewGeneral.qml" line="553"/>
+        <location filename="SSHServerQML/TabViewGeneral.qml" line="554"/>
         <source>Path to private key for host authentication :</source>
         <translation>ホスト認証のための秘密鍵のパス :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewGeneral.qml" line="640"/>
+        <location filename="SSHServerQML/TabViewGeneral.qml" line="641"/>
         <source>Interface to accept connections :</source>
         <translation>接続を受け付けるインターフェース :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewGeneral.qml" line="687"/>
+        <location filename="SSHServerQML/TabViewGeneral.qml" line="688"/>
         <source>Facility for log messages output to syslog server :</source>
         <translation>syslogサーバに出力するログメッセージのファシリティ :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewGeneral.qml" line="700"/>
+        <location filename="SSHServerQML/TabViewGeneral.qml" line="701"/>
         <source>Default is &quot;AUTH&quot;</source>
         <translation>デフォルトは&quot;AUTH&quot;</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewGeneral.qml" line="774"/>
+        <location filename="SSHServerQML/TabViewGeneral.qml" line="775"/>
         <source>Level of log output by sshd :</source>
         <translation>sshdが出力するログのレベル :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewGeneral.qml" line="787"/>
+        <location filename="SSHServerQML/TabViewGeneral.qml" line="789"/>
         <source>Default is &quot;INFO&quot;</source>
         <translation>デフォルトは&quot;INFO&quot;</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewGeneral.qml" line="858"/>
+        <location filename="SSHServerQML/TabViewGeneral.qml" line="861"/>
         <source>Time to automatically disconnect the server, if a user fails to log in within the specified time [sec] :</source>
         <translation>ユーザが指定時間[sec]以内にログインしなかった場合に、自動的にサーバを切断するまでの時間 :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewGeneral.qml" line="881"/>
+        <location filename="SSHServerQML/TabViewGeneral.qml" line="885"/>
         <source>&lt;u&gt;If the value is 0, there is no time limit&lt;/u&gt;.</source>
         <translation>&lt;u&gt;0を入力する場合、タイムリミットは無効になります&lt;/u&gt;。</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewGeneral.qml" line="882"/>
+        <location filename="SSHServerQML/TabViewGeneral.qml" line="886"/>
         <source>Default is 120 [sec]</source>
         <translation>デフォルトは120[秒]</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewGeneral.qml" line="916"/>
+        <location filename="SSHServerQML/TabViewGeneral.qml" line="921"/>
         <source>Check directory and file permissions for logged-in users before login :</source>
         <translation>ログインしたユーザのディレクトリとファイルのパーミッションをログイン前にチェックする :</translation>
     </message>
     <message>
-        <location filename="SSHServerQML/TabViewGeneral.qml" line="930"/>
+        <location filename="SSHServerQML/TabViewGeneral.qml" line="936"/>
         <source>Default is &quot;yes&quot;</source>
         <translation>デフォルトは&quot;yes&quot;</translation>
     </message>

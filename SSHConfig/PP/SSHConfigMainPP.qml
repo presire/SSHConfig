@@ -200,7 +200,7 @@ ApplicationWindow {
                                                                    {mainWidth: mainWindow.width, mainHeight: mainWindow.height,
                                                                     bDark: mainWindow.bDark,
                                                                     messageTitle: qsTr("Exec Error"),
-                                                                    messageText: qsTr("Failed to get ssh(d).service status.") + "<br>" + errMsg});
+                                                                    messageText: qsTr("Failed to get ssh(d).service status.") + "<br>"});
                     errorDialog.show();
                 }
             }

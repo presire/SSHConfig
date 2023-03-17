@@ -280,14 +280,13 @@ ApplicationWindow {
                 labelRemoteStopSSH.enabled = false
                 labelRemoteStopSSH.color   = "grey"
 
-                let errMsg = sshService.getErrorMessage()
                 let componentDialog = Qt.createComponent("qrc:///ExtendQML/ErrorDialog.qml");
                 if (componentDialog.status === Component.Ready) {
                     let errorDialog = componentDialog.createObject(mainWindow,
                                                                    {mainWidth: mainWindow.width, mainHeight: mainWindow.height,
                                                                     bDark: mainWindow.bDark,
                                                                     messageTitle: qsTr("Exec Error"),
-                                                                    messageText: qsTr("Failed to get ssh(d).service status.") + "<br>" + errMsg});
+                                                                    messageText: qsTr("Failed to get ssh(d).service status.") + "<br>"});
                     errorDialog.show();
                 }
             }

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 
-project(RemoteWindow VERSION 0.1.0 LANGUAGES CXX)
+project(RemoteWindow VERSION 0.1.1 LANGUAGES CXX)
 
 # Build only Linux distribution
 if(NOT (UNIX AND NOT APPLE) OR ANDROID OR IOS)
@@ -41,7 +41,7 @@ include(FeatureSummary)
 
 
 # Version
-set(PROJECT_VERSION 0.1.0)
+set(PROJECT_VERSION 0.1.1)
 set(PROJECT_SOVERSION 0)
 
 
@@ -119,9 +119,10 @@ set(HEADERS
 
 
 # Image Files
-file(GLOB IMAGE_FILES "Image/*.png" "Image/*.svg")
+file(GLOB IMAGE_FILES RELATIVE ${CMAKE_SOURCE_DIR}/Image *.png *.svg)
 
 
+# Translation
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_create_translation(QM_FILES
         ${CMAKE_SOURCE_DIR} ${TS_FILES}
@@ -195,7 +196,7 @@ else()
 endif()
 
 ## for Version
-target_compile_definitions(RemoteWindow PRIVATE VER="0.1.0")
+target_compile_definitions(RemoteWindow PRIVATE VER="0.1.1")
 
 
 # Link Qt Libraries

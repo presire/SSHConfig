@@ -159,7 +159,7 @@ QML_IMPORT_PATH =
 QML_DESIGNER_IMPORT_PATH =
 
 # Version Information
-VERSION = 0.1.0
+VERSION = 0.1.1
 VERSTR = '\\"$${VERSION}\\"'  # place quotes around the version string
 DEFINES += VER=\"$${VERSTR}\" # create a VER macro containing the version string
 

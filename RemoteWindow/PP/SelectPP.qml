@@ -60,6 +60,7 @@ Item {
             if (componentDialog.status === Component.Ready) {
                 errorDialog = componentDialog.createObject(select,
                                                            {bDark: select.bDark, fontPadding: select.fontPadding,
+                                                            mainWidth: select.width,
                                                             messageTitle: qsTr("Error"),
                                                             messageText: qsTr("Connection failed.") + "<br>" + errMsg});
                 errorDialog.show();
@@ -88,6 +89,7 @@ Item {
                 if (componentDialog.status === Component.Ready) {
                     errorDialog = componentDialog.createObject(select,
                                                                {bDark: select.bDark, fontPadding: select.fontPadding,
+                                                                mainWidth: select.width,
                                                                 messageTitle: qsTr("Error"),
                                                                 messageText: qsTr("Connection failed.") + "<br>" + errMsg});
                     errorDialog.show();
@@ -103,7 +105,7 @@ Item {
         function onServerConnected() {
             completePopup.viewTitle = qsTr("Connection succeeded")
             completePopup.fontPadding = select.fontPadding
-            completePopup.bAutolose = false
+            completePopup.bAutoClose = false
             completePopup.open()
         }
     }
@@ -144,6 +146,7 @@ Item {
             if (componentDialog.status === Component.Ready) {
                 let errorDialog = componentDialog.createObject(select,
                                                            {bDark: select.bDark, fontPadding: select.fontPadding,
+                                                            mainWidth: select.width,
                                                             messageTitle: qsTr("Error"),
                                                             messageText: qsTr("Error on reception or invalid command.") + "<br>" + errorMessage});
                 errorDialog.show();
@@ -179,7 +182,7 @@ Item {
                         // Success download.
 //                        completePopup.viewTitle = qsTr("\"sshd_config\" file has been selected")
 //                        completePopup.fontPadding = select.fontPadding
-//                        completePopup.bAutolose = true
+//                        completePopup.bAutoClose = true
 //                        completePopup.open()
                     }
                     else if (iRet === 1) {
@@ -188,6 +191,7 @@ Item {
                         if (componentDialog.status === Component.Ready) {
                             errorDialog = componentDialog.createObject(select,
                                                                        {bDark: select.bDark, fontPadding: select.fontPadding,
+                                                                        mainWidth: select.width,
                                                                         messageTitle: qsTr("Warning"),
                                                                         messageText: qsTr("Incorrect administrator password or empty \"sshd_config\" file.")});
                             errorDialog.show();
@@ -201,6 +205,7 @@ Item {
                         if (componentDialog.status === Component.Ready) {
                             errorDialog = componentDialog.createObject(select,
                                                                        {bDark: select.bDark, fontPadding: select.fontPadding,
+                                                                        mainWidth: select.width,
                                                                         messageTitle: qsTr("Error"),
                                                                         messageText: qsTr("Download of \"sshd_config\" file failed.") + "<br>" + errMsg});
                             errorDialog.show();
@@ -235,7 +240,7 @@ Item {
                 // Success download.
 //                completePopup.viewTitle = qsTr("\"sshd_config\" file has been selected")
 //                completePopup.fontPadding = select.fontPadding
-//                completePopup.bAutolose = true
+//                completePopup.bAutoClose = true
 //                completePopup.open()
             }
             else if (iRet === 1) {
@@ -249,6 +254,7 @@ Item {
                 if (componentDialog.status === Component.Ready) {
                     let errorDialog = componentDialog.createObject(select,
                                                                    {bDark: select.bDark, fontPadding: select.fontPadding,
+                                                                    mainWidth: select.width,
                                                                     messageTitle: qsTr("Error"),
                                                                     messageText: qsTr("Could not download \"sshd_config\" file.") + "<br>" + errMsg});
                     errorDialog.show();
@@ -286,6 +292,7 @@ Item {
                 if (componentDialog.status === Component.Ready) {
                     let errorDialog = componentDialog.createObject(select,
                                                                    {bDark: select.bDark, fontPadding: select.fontPadding,
+                                                                    mainWidth: select.width,
                                                                     messageTitle: qsTr("Error"),
                                                                     messageText: qsTr("Failed to move directory on remote server.") + "<br>" + errMsg});
                     errorDialog.show();
@@ -323,7 +330,7 @@ Item {
 
 //            completePopup.viewTitle = qsTr("Key file has been selected")
 //            completePopup.fontPadding = select.fontPadding
-//            completePopup.bAutolose = true
+//            completePopup.bAutoClose = true
 //            completePopup.open()
         }
         else {
@@ -357,6 +364,7 @@ Item {
                 if (componentDialog.status === Component.Ready) {
                     let errorDialog = componentDialog.createObject(select,
                                                                    {bDark: select.bDark, fontPadding: select.fontPadding,
+                                                                    mainWidth: select.width,
                                                                     messageTitle: qsTr("Error"),
                                                                     messageText: qsTr("Failed to move directory on remote server.") + "<br>" + errMsg});
                     errorDialog.show();
@@ -672,6 +680,7 @@ Item {
                 if (componentDialog.status === Component.Ready) {
                     let errorDialog = componentDialog.createObject(select,
                                                                    {bDark: select.bDark, fontPadding: select.fontPadding,
+                                                                    mainWidth: select.width,
                                                                     messageTitle: qsTr("Error"),
                                                                     messageText: qsTr("Failed to move directory on remote server.") + "<br>" + errMsg});
                     errorDialog.show();

@@ -58,6 +58,7 @@ Item {
             if (componentDialog.status === Component.Ready) {
                 errorDialog = componentDialog.createObject(selectDirectory,
                                                            {bDark: selectDirectory.bDark, fontPadding: selectDirectory.fontPadding,
+                                                            mainWidth: selectDirectory.width,
                                                             messageTitle: qsTr("Error"),
                                                             messageText: qsTr("Connection failed.") + "<br>" + errMsg});
                 errorDialog.show();
@@ -79,6 +80,7 @@ Item {
                 if (componentDialog.status === Component.Ready) {
                     errorDialog = componentDialog.createObject(selectDirectory,
                                                                {bDark: selectDirectory.bDark, fontPadding: selectDirectory.fontPadding,
+                                                                mainWidth: selectDirectory.width,
                                                                 messageTitle: qsTr("Error"),
                                                                 messageText: qsTr("Connection failed.") + "<br>" + errMsg});
                     errorDialog.show();
@@ -94,7 +96,7 @@ Item {
         function onServerConnected() {
             completePopup.viewTitle = qsTr("Connection succeeded")
             completePopup.fontPadding = selectDirectory.fontPadding
-            completePopup.bAutolose = false
+            completePopup.bAutoClose = false
             completePopup.open()
         }
     }
@@ -122,6 +124,7 @@ Item {
             if (componentDialog.status === Component.Ready) {
                 let errorDialog = componentDialog.createObject(selectDirectory,
                                                            {bDark: selectDirectory.bDark, fontPadding: selectDirectory.fontPadding,
+                                                            mainWidth: selectDirectory.width,
                                                             messageTitle: qsTr("Error"),
                                                             messageText: qsTr("Error on reception or invalid command.") + "<br>" + errorMessage});
                 errorDialog.show();
@@ -160,6 +163,7 @@ Item {
             if (componentDialog.status === Component.Ready) {
                 let errorDialog = componentDialog.createObject(selectDirectory,
                                                                {bDark: selectDirectory.bDark, fontPadding: selectDirectory.fontPadding,
+                                                                mainWidth: selectDirectory.width,
                                                                 messageTitle: qsTr("Error"),
                                                                 messageText: qsTr("Failed to move directory on remote server.") + "<br>" + errMsg});
                 errorDialog.show();
@@ -446,6 +450,7 @@ Item {
                 if (componentDialog.status === Component.Ready) {
                     let errorDialog = componentDialog.createObject(selectDirectory,
                                                                    {bDark: selectDirectory.bDark, fontPadding: selectDirectory.fontPadding,
+                                                                    mainWidth: selectDirectory.width,
                                                                     messageTitle: qsTr("Error"),
                                                                     messageText: qsTr("Failed to move directory on remote server.") + "<br>" + errMsg});
                     errorDialog.show();
@@ -518,6 +523,7 @@ Item {
                     if (componentDialog.status === Component.Ready) {
                         let errorDialog = componentDialog.createObject(selectDirectory,
                                                                        {bDark: selectDirectory.bDark, fontPadding: selectDirectory.fontPadding,
+                                                                        mainWidth: selectDirectory.width,
                                                                         messageTitle: qsTr("Error"),
                                                                         messageText: qsTr("You will need to select a directory.") + "<br>"});
                         errorDialog.show();

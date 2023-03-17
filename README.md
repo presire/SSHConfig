@@ -81,7 +81,11 @@ Install the dependencies required to build the **SSHConfig** and **SSHConfig Ser
                 coreutils gcc cmake polkit-devel libpolkit-qt5-1-devel \
                 libqt5-qtbase-common-devel libqt5-linguist libqt5-linguist-devel \
                 libQt5Core-devel libQt5Gui-devel libQt5Widgets-devel libQt5DBus-devel \
+<<<<<<< HEAD
+                libQt5QuickControls2-devel libQt5Network-devel libQt5Xml-devel \
+=======
                 libQt5QuickControls2-devel libQt5Network-devel libQt5Xml-devel 
+>>>>>>> Release
                 libQt5Concurrent-devel libqt5-qtdeclarative-tools
 
     # Fedora

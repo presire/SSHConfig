@@ -13,8 +13,6 @@ ApplicationWindow {
     id: authForSSHService
     width: viewWidth
     height: viewHeight
-//    minimumWidth: 812
-//    minimumHeight: 812
     visible: true
     title: qsTr("Authentication for \"ssh(d).service\" (Remote Server)")
 
@@ -74,19 +72,6 @@ ApplicationWindow {
 
     CClient {
         id: remoteClient
-    }
-
-    WaitPopup {
-        id: waitPopup
-
-        viewTitle:   ""
-        positionY:   0
-        viewWidth:   authForSSHService.width
-        fontPadding: authForSSHService.fontPadding
-        parentName:  authForSSHService.parentName
-
-        onOpened: {
-        }
     }
 
     ScrollView {
@@ -627,9 +612,12 @@ ApplicationWindow {
                     }
 
                     onClicked: {
-                        // Display Wait Popup
-                        waitPopup.viewTitle = qsTr("Please wait for a while until process is finished.")
-                        waitPopup.open()
+//                        // Display Wait Popup
+//                        waitPopup.viewTitle = qsTr("Please wait for a while until process is finished.")
+//                        waitPopup.open()
+
+//                        // Execute command ssh(d).service.
+//                        authForSSHService.execSSHService()
 
                         // Save settings for connecting to remote server.
                         if (authForSSHService.bSave) {
@@ -637,79 +625,42 @@ ApplicationWindow {
                                                        authForSSHService.certFile, authForSSHService.bUsePrivateKey, authForSSHService.privateKeyFile, authForSSHService.bUsePassphrase)
                         }
 
-                        // Connect remote server.
-                        let bConnect = remoteClient.connectToServer(authForSSHService.hostName, authForSSHService.port,           authForSSHService.bUseSSL,        authForSSHService.bUseCert,
-                                                                    authForSSHService.certFile, authForSSHService.bUsePrivateKey, authForSSHService.privateKeyFile, authForSSHService.bUsePassphrase,
-                                                                    authForSSHService.passphrase, 0)
-
-                        let errMsg          = ""
-                        let componentDialog = null
-                        let errorDialog     = null
-                        if (bConnect === false) {
-                            errMsg = remoteClient.getErrorMessage()
-
-                            componentDialog = Qt.createComponent("qrc:/ExtendQML/ErrorDialogPP.qml");
-                            if (componentDialog.status === Component.Ready) {
-                                errorDialog = componentDialog.createObject(authForSSHService,
-                                                                               {bDark: authForSSHService.bDark, fontPadding: authForSSHService.fontPadding,
-                                                                                messageTitle: qsTr("Error"),
-                                                                                messageText: qsTr("Connection failed.") + "<br>" + errMsg});
-                                waitPopup.close()
-                                errorDialog.show()
-
-                                return
-                            }
+                        let componentPopup= Qt.createComponent("qrc:/ExtendQML/ProcessPopup.qml");
+                        if (componentPopup.status === Component.Ready) {
+                            let processPopup = componentPopup.createObject(authForSSHService,
+                                                                             {viewWidth: authForSSHService.width, viewHeight: authForSSHService.height,
+                                                                              fontPadding: authForSSHService.fontPadding, bDark: authForSSHService.bDark,
+                                                                              parentName: authForSSHService, remoteClient: remoteClient,
+                                                                              viewTitle:  qsTr("Please wait for a while until process is finished.")});
+                            processPopupConnection.target = processPopup
+                            processPopup.open();
                         }
-
-                        let iRet = 0;
-                        let command = ""
-                        if (!authForSSHService.bStatus) {
-                            // Start(Restart) or Stop ssh(d) service.
-                            let startstop = authForSSHService.bActionFlag ? 6 : 7
-                            command       = authForSSHService.bActionFlag ? "sshrestart" : "sshstop"
-                            iRet = remoteClient.writeToServer(command, startstop)
-                            if (iRet === -1) {
-                                errMsg = remoteClient.getErrorMessage()
-
-                                componentDialog = Qt.createComponent("qrc:/ExtendQML/ErrorDialogPP.qml");
-                                if (componentDialog.status === Component.Ready) {
-                                    errorDialog = componentDialog.createObject(authForSSHService,
-                                                                               {bDark: authForSSHService.bDark, fontPadding: authForSSHService.fontPadding,
-                                                                                messageTitle: qsTr("Error"),
-                                                                                messageText: qsTr("Failed to send packet.") + "<br>" + errMsg});
-                                    waitPopup.close()
-                                    errorDialog.show()
-
-                                    return
-                                }
-                            }
-                        }
-                        else {
-                            // Get status of ssh(d) service.
-                            command = "sshstatus"
-                            iRet = remoteClient.writeToServer(command, 8)
-                            if (iRet === -1) {
-                                errMsg = remoteClient.getErrorMessage()
-
-                                componentDialog = Qt.createComponent("qrc:/ExtendQML/ErrorDialogPP.qml");
-                                if (componentDialog.status === Component.Ready) {
-                                    errorDialog = componentDialog.createObject(authForSSHService,
-                                                                               {bDark: authForSSHService.bDark, fontPadding: authForSSHService.fontPadding,
-                                                                                messageTitle: qsTr("Error"),
-                                                                                messageText: qsTr("Failed to send packet.") + "<br>" + errMsg});
-                                    waitPopup.close()
-                                    errorDialog.show();
-
-                                    return
-                                }
-                            }
-                        }
-
-                        waitPopup.close()
                     }
 
                     Keys.onReturnPressed: {
                         clicked()
+                    }
+
+                    Connections {
+                        id: processPopupConnection
+                        function onVisibleChanged() {
+                            if(!target.visible) {
+                                if (target.returnValue === 1) {
+                                    // Error.
+                                    let componentDialog = Qt.createComponent("qrc:/ExtendQML/ErrorDialogPP.qml");
+                                    if (componentDialog.status === Component.Ready) {
+                                        let errorDialog = componentDialog.createObject(authForSSHService,
+                                                                                       {bDark: authForSSHService.bDark, fontPadding: authForSSHService.fontPadding,
+                                                                                        mainWidth: authForSSHService.width,
+                                                                                        messageTitle: qsTr("Error"),
+                                                                                        messageText:  target.errMsg});
+                                        errorDialog.show()
+                                    }
+                                }
+
+                                target = null
+                            }
+                        }
                     }
                 }
 

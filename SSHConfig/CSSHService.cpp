@@ -366,6 +366,7 @@ int CSSHService::executeRemoteSSHService(int width, int height, bool bDark, int 
 {
 //    if(m_clsRemote != nullptr)
 //    {
+//        QObject::disconnect(m_clsRemote.get(), &CRemoteWindow::sendStatus, this, &CSSHService::resultGetSSHStatusRemoteHost);
 //        m_clsRemote.reset();
 //    }
 

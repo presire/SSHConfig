@@ -20,18 +20,18 @@
         <location filename="CSSLSocket.cpp" line="366"/>
         <location filename="CSSLSocket.cpp" line="381"/>
         <location filename="CSSLSocket.cpp" line="400"/>
-        <location filename="CSSLSocket.cpp" line="439"/>
-        <location filename="CSSLSocket.cpp" line="449"/>
-        <location filename="CSSLSocket.cpp" line="458"/>
-        <location filename="CSSLSocket.cpp" line="474"/>
-        <location filename="CSSLSocket.cpp" line="482"/>
+        <location filename="CSSLSocket.cpp" line="443"/>
+        <location filename="CSSLSocket.cpp" line="453"/>
+        <location filename="CSSLSocket.cpp" line="462"/>
+        <location filename="CSSLSocket.cpp" line="479"/>
+        <location filename="CSSLSocket.cpp" line="487"/>
         <source>error</source>
         <translation>エラー</translation>
     </message>
     <message>
         <location filename="CSSLSocket.cpp" line="288"/>
         <location filename="CSSLSocket.cpp" line="308"/>
-        <location filename="CSSLSocket.cpp" line="449"/>
+        <location filename="CSSLSocket.cpp" line="453"/>
         <source>File open error : %1</source>
         <translation>ファイルのオープンに失敗しました : %1</translation>
     </message>
@@ -61,39 +61,39 @@
         <translation>SSHの状態を取得できませんでした。</translation>
     </message>
     <message>
-        <location filename="CSSLSocket.cpp" line="439"/>
+        <location filename="CSSLSocket.cpp" line="443"/>
         <source>File backup error : %1</source>
         <translation>ファイルのバックアップエラー: %1</translation>
     </message>
     <message>
-        <location filename="CSSLSocket.cpp" line="458"/>
-        <location filename="CSSLSocket.cpp" line="474"/>
+        <location filename="CSSLSocket.cpp" line="462"/>
+        <location filename="CSSLSocket.cpp" line="479"/>
         <source>File upload error : %1</source>
         <translation>ファイルのアップロードエラー: %1</translation>
     </message>
     <message>
-        <location filename="CSSLSocket.cpp" line="482"/>
+        <location filename="CSSLSocket.cpp" line="487"/>
         <source>Unknown command</source>
         <translation>不明なコマンド</translation>
     </message>
     <message>
-        <location filename="CSSLSocket.cpp" line="539"/>
+        <location filename="CSSLSocket.cpp" line="556"/>
         <source>No such sshd binary file : %1</source>
         <translation>sshdコマンドが見つかりません : %1</translation>
     </message>
     <message>
-        <location filename="CSSLSocket.cpp" line="558"/>
+        <location filename="CSSLSocket.cpp" line="575"/>
         <source>No such file : %1</source>
         <translation>ファイルが見つかりません: %1</translation>
     </message>
     <message>
-        <location filename="CSSLSocket.cpp" line="794"/>
-        <location filename="CSSLSocket.cpp" line="818"/>
+        <location filename="CSSLSocket.cpp" line="811"/>
+        <location filename="CSSLSocket.cpp" line="835"/>
         <source>Unknown push command</source>
         <translation>不明なコマンドです</translation>
     </message>
     <message>
-        <location filename="CSSLSocket.cpp" line="873"/>
+        <location filename="CSSLSocket.cpp" line="890"/>
         <source>No such sshd_config file : %1</source>
         <translation>sshd_configファイルが見つかりません : %1</translation>
     </message>

@@ -75,5 +75,6 @@
         <file>PP/SSHOptionListViewPP.qml</file>
         <file>ExtendQML/ErrorDialogPP.qml</file>
         <file>ExtendQML/WarningDialogPP.qml</file>
+        <file>ExtendQML/ReloadDialog.qml</file>
     </qresource>
 </RCC>

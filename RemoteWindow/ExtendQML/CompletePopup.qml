@@ -23,7 +23,7 @@ Popup {
      property string viewTitle:   ""
      property int    fontPadding: 0
      property int    timerTime:   3000
-     property bool   bAutolose:   false
+     property bool   bAutoClose:   false
 
      enter: Transition {
          NumberAnimation {
@@ -87,7 +87,7 @@ Popup {
      }
 
      onClosed: {
-         if (bAutolose) {
+         if (bAutoClose) {
              parentName.close()
          }
      }

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 
-project(SSHConfig VERSION 0.1.0 LANGUAGES CXX)
+project(SSHConfig VERSION 0.1.1 LANGUAGES CXX)
 
 # Build only Linux distribution
 if(NOT (UNIX AND NOT APPLE) OR ANDROID OR IOS)
@@ -226,7 +226,7 @@ else()
 endif()
 
 ## for Version
-target_compile_definitions(SSHConfig PRIVATE VER="0.1.0")
+target_compile_definitions(SSHConfig PRIVATE VER="0.1.1")
 
 
 # Compile option
@@ -361,7 +361,7 @@ string(REPLACE "%ver%" "${CMAKE_PROJECT_VERSION}" output_file_content "${output_
 # Write File
 file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/SSHConfig.desktop" "${output_file_content}")
 
-if(${CMAKE_INSTALL_PREFIX} STREQUAL "/usr/local" OR "${CMAKE_INSTALL_PREFIX}" MATCHES "^/usr/local(/*)$")
+if(${CMAKE_INSTALL_PREFIX} STREQUAL "/usr/local" OR "${CMAKE_INSTALL_PREFIX}" MATCHES "^/usr/local/+$")
     install(FILES
         ${CMAKE_CURRENT_BINARY_DIR}/SSHConfig.desktop
         DESTINATION "/usr/share/applications"

@@ -150,7 +150,7 @@ isEmpty(systemd) {
 }
 
 isEmpty(pid) {
-    pid = /var/run
+    pid = /run
 }
 
 isEmpty(user) {
