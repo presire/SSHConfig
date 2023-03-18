@@ -11,10 +11,11 @@ import SSHServer 1.0
 Item {
     id: root
 
-    property int  viewWidth:   0
-    property int  viewHeight:  0
-    property int  fontPadding: 0
-    property bool bDark:       false
+    property int  viewWidth:    0
+    property int  viewHeight:   0
+    property int  headerHeight: 0
+    property int  fontPadding:  0
+    property bool bDark:        false
 
     property bool bReadSuccess: false
     property var  sshValue:     null
@@ -864,8 +865,11 @@ Item {
                     id: gSSAPIKexAlgorithmsList
                     width: root.width * 0.85
                     implicitWidth: root.width * 0.85
-                    fontPadding: root.fontPadding
-                    bDark: root.bDark
+
+                    headerHeight:  root.headerHeight
+                    fontPadding:   root.fontPadding
+                    bDark:         root.bDark
+                    parentName:    root
                 }
             }
         }

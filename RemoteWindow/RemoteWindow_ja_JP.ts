@@ -387,7 +387,7 @@
     <name>CClient</name>
     <message>
         <location filename="CClient.cpp" line="23"/>
-        <location filename="CClient.cpp" line="636"/>
+        <location filename="CClient.cpp" line="640"/>
         <source>Client [%1] disconnected.</source>
         <translation>クライアント [%1] 切断しました。</translation>
     </message>
@@ -427,18 +427,18 @@
         <location filename="CClient.cpp" line="385"/>
         <location filename="CClient.cpp" line="401"/>
         <location filename="CClient.cpp" line="443"/>
-        <location filename="CClient.cpp" line="547"/>
-        <location filename="CClient.cpp" line="576"/>
+        <location filename="CClient.cpp" line="551"/>
+        <location filename="CClient.cpp" line="580"/>
         <source>Unknown error.</source>
         <translation>不明なエラーです。</translation>
     </message>
     <message>
-        <location filename="CClient.cpp" line="645"/>
+        <location filename="CClient.cpp" line="649"/>
         <source>Error Name : %1</source>
         <translation>エラー名 : %1</translation>
     </message>
     <message>
-        <location filename="CClient.cpp" line="660"/>
+        <location filename="CClient.cpp" line="664"/>
         <source>SSL error : %1</source>
         <translation>SSLエラー : %1</translation>
     </message>

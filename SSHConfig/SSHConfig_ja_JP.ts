@@ -614,27 +614,27 @@ Please be careful.</source>
     <message>
         <location filename="ExtendQML/ReloadDialog.qml" line="13"/>
         <source>Reload</source>
-        <translation type="finished">再読み込み</translation>
+        <translation>再読み込み</translation>
     </message>
     <message>
         <location filename="ExtendQML/ReloadDialog.qml" line="66"/>
         <source>Do you want to reload the sshd_config file?</source>
-        <translation type="finished">sshd_configファイルを再読み込みしますか？</translation>
+        <translation>sshd_configファイルを再読み込みしますか？</translation>
     </message>
     <message>
         <location filename="ExtendQML/ReloadDialog.qml" line="67"/>
         <source>Do you want to re-download the sshd_config file?</source>
-        <translation type="finished">sshd_configファイルを再ダウンロードしますか？</translation>
+        <translation>sshd_configファイルを再ダウンロードしますか？</translation>
     </message>
     <message>
         <location filename="ExtendQML/ReloadDialog.qml" line="90"/>
         <source>OK</source>
-        <translation type="finished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="ExtendQML/ReloadDialog.qml" line="129"/>
         <source>Cancel</source>
-        <translation type="finished">キャンセル</translation>
+        <translation>キャンセル</translation>
     </message>
 </context>
 <context>
@@ -674,8 +674,8 @@ Please be careful.</source>
     </message>
     <message>
         <location filename="SSHConfigMain.qml" line="242"/>
-        <location filename="SSHConfigMain.qml" line="289"/>
-        <location filename="SSHConfigMain.qml" line="759"/>
+        <location filename="SSHConfigMain.qml" line="288"/>
+        <location filename="SSHConfigMain.qml" line="758"/>
         <source>Exec Error</source>
         <translation>実行エラー</translation>
     </message>
@@ -688,19 +688,19 @@ Please be careful.</source>
         <location filename="SSHConfigMain.qml" line="255"/>
         <location filename="SSHConfigMain.qml" line="265"/>
         <location filename="SSHConfigMain.qml" line="275"/>
-        <location filename="SSHConfigMain.qml" line="547"/>
-        <location filename="SSHConfigMain.qml" line="579"/>
-        <location filename="SSHConfigMain.qml" line="588"/>
-        <location filename="SSHConfigMain.qml" line="592"/>
-        <location filename="SSHConfigMain.qml" line="631"/>
-        <location filename="SSHConfigMain.qml" line="641"/>
+        <location filename="SSHConfigMain.qml" line="546"/>
+        <location filename="SSHConfigMain.qml" line="578"/>
+        <location filename="SSHConfigMain.qml" line="587"/>
+        <location filename="SSHConfigMain.qml" line="591"/>
+        <location filename="SSHConfigMain.qml" line="630"/>
+        <location filename="SSHConfigMain.qml" line="640"/>
         <source>Start / Restart</source>
         <translation>開始 / 再起動</translation>
     </message>
     <message>
         <location filename="SSHConfigMain.qml" line="255"/>
-        <location filename="SSHConfigMain.qml" line="579"/>
-        <location filename="SSHConfigMain.qml" line="592"/>
+        <location filename="SSHConfigMain.qml" line="578"/>
+        <location filename="SSHConfigMain.qml" line="591"/>
         <source>(running)</source>
         <translation>(起動中)</translation>
     </message>
@@ -708,79 +708,79 @@ Please be careful.</source>
         <location filename="SSHConfigMain.qml" line="259"/>
         <location filename="SSHConfigMain.qml" line="269"/>
         <location filename="SSHConfigMain.qml" line="279"/>
-        <location filename="SSHConfigMain.qml" line="599"/>
-        <location filename="SSHConfigMain.qml" line="679"/>
+        <location filename="SSHConfigMain.qml" line="598"/>
+        <location filename="SSHConfigMain.qml" line="678"/>
         <source>Stop</source>
         <translation>停止</translation>
     </message>
     <message>
         <location filename="SSHConfigMain.qml" line="265"/>
-        <location filename="SSHConfigMain.qml" line="588"/>
-        <location filename="SSHConfigMain.qml" line="631"/>
+        <location filename="SSHConfigMain.qml" line="587"/>
+        <location filename="SSHConfigMain.qml" line="630"/>
         <source>(inactive)</source>
         <translation>(停止中)</translation>
     </message>
     <message>
         <location filename="SSHConfigMain.qml" line="275"/>
         <location filename="SSHConfigMain.qml" line="279"/>
-        <location filename="SSHConfigMain.qml" line="641"/>
-        <location filename="SSHConfigMain.qml" line="679"/>
+        <location filename="SSHConfigMain.qml" line="640"/>
+        <location filename="SSHConfigMain.qml" line="678"/>
         <source>(Unknown Status)</source>
         <translation>不明な状態</translation>
     </message>
     <message>
-        <location filename="SSHConfigMain.qml" line="290"/>
+        <location filename="SSHConfigMain.qml" line="289"/>
         <source>Failed to get ssh(d).service status.</source>
         <translation>SSHの状態取得に失敗しました。</translation>
     </message>
     <message>
-        <location filename="SSHConfigMain.qml" line="321"/>
+        <location filename="SSHConfigMain.qml" line="320"/>
         <source>SSH Server</source>
         <translation>サーバ設定</translation>
     </message>
     <message>
-        <location filename="SSHConfigMain.qml" line="361"/>
+        <location filename="SSHConfigMain.qml" line="360"/>
         <source>SSH Test</source>
         <translation>テスト</translation>
     </message>
     <message>
-        <location filename="SSHConfigMain.qml" line="400"/>
+        <location filename="SSHConfigMain.qml" line="399"/>
         <source>Mode</source>
         <translation>設定</translation>
     </message>
     <message>
-        <location filename="SSHConfigMain.qml" line="439"/>
+        <location filename="SSHConfigMain.qml" line="438"/>
         <source>About Qt</source>
         <translation>Qtについて</translation>
     </message>
     <message>
-        <location filename="SSHConfigMain.qml" line="478"/>
+        <location filename="SSHConfigMain.qml" line="477"/>
         <source>Quit</source>
         <translation>終了</translation>
     </message>
     <message>
-        <location filename="SSHConfigMain.qml" line="528"/>
-        <location filename="SSHConfigMain.qml" line="531"/>
+        <location filename="SSHConfigMain.qml" line="527"/>
+        <location filename="SSHConfigMain.qml" line="530"/>
         <source>SSH Service :</source>
         <translation>SSHサービス :</translation>
     </message>
     <message>
-        <location filename="SSHConfigMain.qml" line="528"/>
+        <location filename="SSHConfigMain.qml" line="527"/>
         <source>(this computer)</source>
         <translation>対象 : ローカルPC</translation>
     </message>
     <message>
-        <location filename="SSHConfigMain.qml" line="531"/>
+        <location filename="SSHConfigMain.qml" line="530"/>
         <source>(Remote server)</source>
         <translation>対象 : リモートサーバ</translation>
     </message>
     <message>
-        <location filename="SSHConfigMain.qml" line="717"/>
+        <location filename="SSHConfigMain.qml" line="716"/>
         <source>Get Status</source>
         <translation>状態を取得</translation>
     </message>
     <message>
-        <location filename="SSHConfigMain.qml" line="760"/>
+        <location filename="SSHConfigMain.qml" line="759"/>
         <source>Failed to get status for ssh(d).service.</source>
         <translation>ssh(d).serviceのステータス取得に失敗しました。</translation>
     </message>

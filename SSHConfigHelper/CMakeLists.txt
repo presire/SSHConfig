@@ -163,7 +163,7 @@ qt_add_dbus_adaptor(
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_create_translation(QM_FILES
-        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_SOURCE_DIR}/SSHConfigHelper
         ${TS_FILES}
     )
 
@@ -174,7 +174,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     )
 else()
     qt5_create_translation(QM_FILES
-        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_SOURCE_DIR}/SSHConfigHelper
         ${TS_FILES}
     )
 
@@ -251,7 +251,7 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/dbus/org.presire.sshconfig.xml.in
 
 string(TOUPPER "${DBUSIF}" DBUSIF)
 if("${DBUSIF}" STREQUAL "YES")
-    if(${CMAKE_INSTALL_PREFIX} STREQUAL "/usr/local")
+    if(${CMAKE_INSTALL_PREFIX} STREQUAL "/usr/local" OR "${CMAKE_INSTALL_PREFIX}" MATCHES "^/usr/local(/*)$")
         install(FILES
             ${CMAKE_CURRENT_BINARY_DIR}/org.presire.sshconfig.xml
             DESTINATION "/usr/share/dbus-1/interfaces"

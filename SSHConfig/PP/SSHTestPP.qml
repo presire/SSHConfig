@@ -52,7 +52,7 @@ Item {
                 // Display success popup.
                 completePopup.viewTitle   = qsTr("The sshd command was successfully executed on remote server")
                 completePopup.fontPadding = root.fontPadding
-                completePopup.bAutolose   = false
+                completePopup.bAutoClose   = false
                 completePopup.open()
             }
             else {
@@ -453,7 +453,7 @@ Item {
                             // Display success popup.
                             completePopup.viewTitle   = qsTr("The sshd command was successfully executed")
                             completePopup.fontPadding = root.fontPadding
-                            completePopup.bAutolose   = false
+                            completePopup.bAutoClose   = false
                             completePopup.open()
                         }
                         else if (iRet === 1) {

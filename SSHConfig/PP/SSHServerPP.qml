@@ -136,7 +136,7 @@ Page {
             else {
                 completePopup.viewTitle   = qsTr("Upload \"sshd_config\" file to remote server")
                 completePopup.fontPadding = pageSSHServer.fontPadding
-                completePopup.bAutolose   = false
+                completePopup.bAutoClose   = false
                 completePopup.open()
             }
 
@@ -227,7 +227,7 @@ Page {
             // Diplay success popup.
             completePopup.viewTitle = qsTr("Read \"sshd_config\" file")
             completePopup.fontPadding = pageSSHServer.fontPadding
-            completePopup.bAutolose = false
+            completePopup.bAutoClose = false
             completePopup.open()
 
             // If there are duplicate non-duplicate items.
@@ -335,7 +335,7 @@ Page {
             // Diplay success popup.
             completePopup.viewTitle = qsTr("Read \"sshd_config\" file")
             completePopup.fontPadding = pageSSHServer.fontPadding
-            completePopup.bAutolose = false
+            completePopup.bAutoClose = false
             completePopup.open()
 
             // If there are duplicate non-duplicate items.
@@ -521,7 +521,7 @@ Page {
         if (pageSSHServer.bServerMode && bCanceled === false) {
             completePopup.viewTitle   = qsTr("Write \"sshd_config\" file")
             completePopup.fontPadding = pageSSHServer.fontPadding
-            completePopup.bAutolose   = false
+            completePopup.bAutoClose   = false
             completePopup.open()
         }
 
@@ -1218,6 +1218,7 @@ Page {
             id: tabViewGeneral
             viewWidth: parent.width
             viewHeight: parent.height
+            headerHeight: headerSSHServer.y + headerSSHServer.height
             fontPadding:  pageSSHServer.fontPadding
             bDark: pageSSHServer.bDark
             bServerMode: pageSSHServer.bServerMode
@@ -1247,6 +1248,7 @@ Page {
             id: tabViewAuthentication
             viewWidth:    parent.width
             viewHeight:   parent.height
+            headerHeight: headerSSHServer.y + headerSSHServer.height
             fontPadding:  pageSSHServer.fontPadding
             bDark:        pageSSHServer.bDark
             bServerMode:  pageSSHServer.bServerMode
@@ -1276,6 +1278,7 @@ Page {
             id: tabViewKerberos
             viewWidth:    parent.width
             viewHeight:   parent.height
+            headerHeight: headerSSHServer.y + headerSSHServer.height
             fontPadding:  pageSSHServer.fontPadding
             bDark:        pageSSHServer.bDark
 

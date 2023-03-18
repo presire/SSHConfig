@@ -11,11 +11,12 @@ import SSHServer 1.0
 Item {
     id: root
 
-    property int  viewWidth:   0
-    property int  viewHeight:  0
-    property int  fontPadding: 0
-    property bool bDark:       false
-    property bool bServerMode: true
+    property int  viewWidth:    0
+    property int  viewHeight:   0
+    property int  headerHeight: 0
+    property int  fontPadding:  0
+    property bool bDark:        false
+    property bool bServerMode:  true
 
     property bool bReadSuccess:    false
     property var  sshServerConfig: null
@@ -723,8 +724,11 @@ Item {
                 id: authorizedKeysFileList
                 width: parent.width * 0.85
                 implicitWidth: parent.width * 0.85
-                fontPadding: root.fontPadding
-                bDark: root.bDark
+
+                headerHeight:  root.headerHeight
+                fontPadding:   root.fontPadding
+                bDark:         root.bDark
+                parentName:    root
             }
 
             // AuthorizedKeysCommand

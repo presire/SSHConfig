@@ -144,7 +144,7 @@ Item {
         if (root.bServerMode && bCanceled === false) {
             completePopup.viewTitle = qsTr("Write \"sshd_config\" file")
             completePopup.fontPadding = root.fontPadding
-            completePopup.bAutolose = false
+            completePopup.bAutoClose = false
             completePopup.open()
         }
 

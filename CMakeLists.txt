@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 
-project(SSHConfig VERSION 0.1.1 LANGUAGES CXX)
+project(SSHConfig VERSION 0.1.2 LANGUAGES CXX)
 
 # Build only Linux distribution
 if(NOT (UNIX AND NOT APPLE) OR ANDROID OR IOS)
@@ -226,7 +226,7 @@ else()
 endif()
 
 ## for Version
-target_compile_definitions(SSHConfig PRIVATE VER="0.1.1")
+target_compile_definitions(SSHConfig PRIVATE VER="0.1.2")
 
 
 # Compile option

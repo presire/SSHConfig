@@ -92,7 +92,7 @@ endif()
 # Translate File
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/RemoteWindow_ja_JP.ts")
     # If exist ts file.
-    set(TS_FILES RemoteWindow_ja_JP.ts)
+    set(TS_FILES ${CMAKE_CURRENT_SOURCE_DIR}/RemoteWindow_ja_JP.ts)
 else()
     # If not exist ts file.
     set(TS_FILES "")
@@ -105,6 +105,7 @@ set(SOURCES
     RemoteWindow.qrc
     CRemoteWindow.cpp
     CClient.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/../SSHConfig/CWindowState.cpp
     ${TS_FILES}
 )
 
@@ -114,18 +115,20 @@ set(HEADERS
     RemoteWindowExport.h
     CRemoteWindow.h
     CClient.h
-    CWindowState.h
+    #CWindowState.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/../SSHConfig/CWindowState.h
 )
 
 
 # Image Files
-file(GLOB IMAGE_FILES RELATIVE ${CMAKE_SOURCE_DIR}/Image *.png *.svg)
+file(GLOB IMAGE_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}/Image *.png *.svg)
 
 
 # Translation
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_create_translation(QM_FILES
-        ${CMAKE_SOURCE_DIR} ${TS_FILES}
+        ${CMAKE_SOURCE_DIR}/RemoteWindow
+        ${TS_FILES}
     )
 
     qt_add_library(RemoteWindow SHARED MANUAL_FINALIZATION
@@ -136,7 +139,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     )
 else()
     qt5_create_translation(QM_FILES
-        ${CMAKE_SOURCE_DIR}
+        ${CMAKE_SOURCE_DIR}/RemoteWindow
         ${TS_FILES}
     )
 
@@ -150,15 +153,15 @@ endif()
 
 
 # Add other source directories
-target_sources(RemoteWindow PRIVATE
-    "${CMAKE_CURRENT_SOURCE_DIR}/../SSHConfig/CWindowState.cpp"
-)
+#target_sources(RemoteWindow PRIVATE
+    #"${CMAKE_CURRENT_SOURCE_DIR}/../SSHConfig/CWindowState.cpp"
+#)
 
 
-# Add other include directories
-target_include_directories(RemoteWindow BEFORE PRIVATE
-    ${CMAKE_CURRENT_SOURCE_DIR}/../SSHConfig
-)
+#Add other include directories
+#target_include_directories(RemoteWindow BEFORE PRIVATE
+    #${CMAKE_CURRENT_SOURCE_DIR}/../SSHConfig
+#)
 
 
 # Pre-Processor

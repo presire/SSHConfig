@@ -11,9 +11,11 @@ Item {
     implicitWidth: frameList.width    // The important part
     implicitHeight: frameList.height  // Same
 
-    property int  itemHeight:  0
-    property int  fontPadding: 0
-    property bool bDark:       false
+    property var  parentName:   null
+    property int  itemHeight:   0
+    property int  fontPadding:  0
+    property bool bDark:        false
+    property int  headerHeight: 0
 
     // Add "ListView"
     signal appendModel(string name)
@@ -91,7 +93,6 @@ Item {
                 let a = listView.currentItem
                 let b = a.data
                 b[1].displayTextChanged()
-                //b[1].selectByMouseChanged()
             }
 
             delegate: Rectangle {
@@ -185,14 +186,30 @@ Item {
 
                     MouseArea {
                         anchors.fill: parent
-                        acceptedButtons: Qt.RightButton  // Enable "RightButton" on mouse
+                        acceptedButtons: Qt.LeftButton  // Enable "LeftButton" on mouse
 
-                        // Single click
-                        onClicked: {
-                            if (mouse.button === Qt.RightButton) {
-                                listView.currentIndex = index;
-                                contextMenu.popup()
+                        // Single click.
+                        onPressed: {
+                            listView.currentIndex = index;
+                            textName.forceActiveFocus()
+                        }
+
+                        // Press and Hold.
+                        onPressAndHold: {
+                            listView.currentIndex = index;
+
+                            contextMenu.topMargin = mouse.y + root.headerHeight + listView.mapToItem(parentName, 0, 0).y +
+                                                    listView.mapToItem(root, 0, 0).y + listItem.mapToItem(listView, 0, 0).y
+                            if (listView.mapToItem(root, 0, 0).x + mouse.x + contextMenu.width + 50 > parentName.width)
+                            {
+                                contextMenu.leftMargin = mouse.x - contextMenu.width - 50
                             }
+                            else
+                            {
+                                contextMenu.leftMargin = listView.mapToItem(root, 0, 0).x + mouse.x + 70
+                            }
+
+                            contextMenu.popup()
                         }
                     }
                 }
