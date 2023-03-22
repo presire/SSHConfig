@@ -1,0 +1,18 @@
+
+module sshconfig 1.0;
+
+require {
+	type user_home_t;
+	type usr_t;
+	type init_t;
+	class file { execute execute_no_trans map open read write };
+	class process execmem;
+}
+
+#============= init_t ==============
+allow init_t self:process execmem;
+allow init_t user_home_t:file { execute execute_no_trans open read };
+
+#!!!! This avc can be allowed using the boolean 'domain_can_mmap_files'
+allow init_t user_home_t:file map;
+allow init_t usr_t:file write;

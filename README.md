@@ -280,7 +280,47 @@ adding **--locale=jp** option to **Exec** keyword will cause SSHConfigHelper's m
 <br>
 
 **attention (heed)**  
-**If you are using SELinux (Fedora, etc...), you must change the SELinux settings or temporarily disable SELinux as shown below.**  
+**If you are using SELinux (Fedora, etc...), you must Add a policy to SELinux.**  
+**Below is how to add policies to SELinux.**  
+
+1. Go to the directory where te files for SSHConfig Helper are located.  
+   This is located in the top directory of the project.  
+   `cd /<SSHConfig's top source directory>/SELinux`
+
+2. Add policy packages to SELinux.  
+   `sudo semodule -i sshconfig.pp`  
+<br>
+
+You can also compile and add policy module as follows.  
+
+1. Go to directory where "te" file for SSHConfig Helper.  
+   This is located in the top directory of the project.  
+   `cd /<SSHConfig's top source directory>/SELinux`
+
+2. Install necessary libraries.  
+   `sudo dnf install checkpolicy policycoreutils`
+
+3. Compile policy module.  
+   `checkmodule -M -m -o sshconfig.mod sshconfig.te`
+
+4. Create policy package.  
+   `semodule_package -o sshconfig.pp -m sshconfig.mod`
+
+5. Add policy package to SELinux.  
+   `sudo semodule -i sshconfig.pp`  
+<br>
+
+Check the added policy module.  
+
+    sudo semodule -l | grep -i sshconfig
+<br>
+
+You can also delete the added policy module.  
+
+    sudo semodule -r sshconfig.pp
+<br>
+
+**It is deprecated to disable SELinux as described below.**  
 
     sudo setenforce 0
 <br>
